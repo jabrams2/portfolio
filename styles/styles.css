@@ -1,5 +1,5 @@
 #nav {
-	z-index: 1;
+	z-index: 21;
 	text-align: center;
 	position: fixed;
 	top:0px;
@@ -73,6 +73,11 @@
 	position: relative;
 	background-image: url('../images/hero-shot.png');
 	height:700px;
+	margin-bottom:0px;
+	-moz-box-shadow:    0px 3px 15px 3px #8c8c8c;
+  	-webkit-box-shadow: 0px 3px 15px 3px #8c8c8c;
+  	box-shadow:         0px 3px 15px 3px #8c8c8c;
+  	z-index:20;
 }
 
 #hero-shot-bar-left {
@@ -98,9 +103,55 @@
 	background-color: rgba(0,0,0,.3);
 }
 
-
-p {
-	position: relative;
-	line-height: 200px;
+#pinned-trigger1{
+	background-color:#ffffff; 
+	height:50%;
 }
+
+
+#pinned-element1 {
+	margin: 0px;
+	width:90%;
+	margin: 0 auto;
+	padding:60px 0px 0px 0px;
+}
+
+#pinned-element1 h2{
+	margin:0px;
+	padding:0px 0px 40px 0px;
+}
+
+.portfolio-websites{
+	border:1px solid black;
+}
+
+.portfolio-websites img {
+	vertical-align: middle;
+}
+
+#pinned-trigger2 {
+	height:1000px; 
+	background-color:#f2f2f2;
+	margin-top:0px;
+	-moz-box-shadow:    0px -3px 15px 3px #8c8c8c;
+  	-webkit-box-shadow: 0px -3px 15px 3px #8c8c8c;
+  	box-shadow:         0px -3px 15px 3px #8c8c8c;
+}
+
+#pinned-element2 {
+	margin: 0px;
+	width:90%;
+	margin: 0 auto;
+	padding:60px 0px 0px 0px;
+}
+
+#pinned-element2 h2 {
+	margin:0px;
+	padding:0px 0px 40px 0px;
+}
+
+/*.portfolio-image {
+	width:100%;
+	height:auto;
+}*/
 

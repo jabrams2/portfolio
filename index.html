@@ -4,7 +4,10 @@
     <head>
         <link rel="stylesheet" type="text/css" href="styles/normalize.css">
         <link rel="stylesheet" type="text/css" href="styles/styles.css">
-        <link rel="stylesheet" type="text/css" href="styles/skeleton.css">
+<!--         <link rel="stylesheet" type="text/css" href="styles/skeleton.css">
+ -->        
+        <link rel="stylesheet" type="text/css" href="styles/layers.css">
+        <link rel="stylesheet" type="text/css" href="styles/responsive.css">
         <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic,700' rel='stylesheet' type='text/css'>
         <!-- META TAGS -->
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -25,14 +28,60 @@
  -->            </div>
             <div class="nav-square-container">
             </div>
-    </nav>
-    <div id="hero-shot">
-        <div id="hero-shot-bar-left">
-            I like to <strong>think</strong>
+        </nav>
+        <div id="hero-shot">
+            <div id="hero-shot-bar-left">
+                I like to <strong>think</strong>
+            </div>
+            <div id="hero-shot-bar-right">
+                <strong>creativly</strong> and <strong>logically</strong>
+            </div>
         </div>
-        <div id="hero-shot-bar-right">
-            <strong>creativly</strong> and <strong>logically</strong>
+        <div id="pinned-trigger1" class="catch">
+            <div id="pinned-element1" >
+                <h2>Web Design and Development</h2>
+                    <div class="column third portfolio-websites">
+                        <img src="images/gittracker.png"/>
+                    </div>
+                    <div class="column third portfolio-websites">
+                        <img src="images/autofx.png"/>
+                    </div>
+                    <div class="column third last portfolio-websites">
+                        <img src="images/harper.jpg"/>
+                    </div>
+            </div>
         </div>
-    </div>
+         <div id="pinned-trigger2" class="catch">
+            <div id="pinned-element2">
+                <h2>Photography</h2>
+            </div>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
+        <script>
+            $(function () { // wait for document ready
+        // init
+        var controller = new ScrollMagic.Controller({
+            globalSceneOptions: {
+                triggerHook: .1
+            }
+        });
+
+        // get all slides
+        var slides = document.querySelectorAll("div.catch");
+
+
+        // create scene for every slide
+        for (var i=0; i<slides.length; i++) {
+            new ScrollMagic.Scene({
+                    triggerElement: slides[i]
+                })
+                .setPin(slides[i])
+                // .addIndicators() // add indicators (requires plugin)
+                .addTo(controller);
+        }
+    });
+        </script>
     </body>
 </html>
