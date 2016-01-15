@@ -5,11 +5,11 @@
 	top:0px;
 	width:100%;
 	height:120px;
-    background-color: rgba(242, 242, 242, 1);
-    -moz-box-shadow: 0px 0px 11.83px 1.17px rgba(0, 0, 0, 0.82);
+    background-color: #ffffff;
+/*    -moz-box-shadow: 0px 0px 11.83px 1.17px rgba(0, 0, 0, 0.82);
     -webkit-box-shadow: 0px 0px 11.83px 1.17px rgba(0, 0, 0, 0.82);
     -o-box-shadow: 0px 0px 11.83px 1.17px rgba(0, 0, 0, 0.82);
-    box-shadow: 0px 0px 11.83px 1.17px rgba(0, 0, 0, 0.82);
+    box-shadow: 0px 0px 11.83px 1.17px rgba(0, 0, 0, 0.82);*/
 
 }
 
@@ -71,20 +71,28 @@
 
 #hero-shot{
 	position: relative;
-	background-image: url('../images/hero-shot.png');
-	height:700px;
+	height:100%;
+	background-color:#000000;
+	overflow: hidden;
 	margin-bottom:0px;
-	-moz-box-shadow:    0px 3px 15px 3px #8c8c8c;
-  	-webkit-box-shadow: 0px 3px 15px 3px #8c8c8c;
-  	box-shadow:         0px 3px 15px 3px #8c8c8c;
-  	z-index:20;
+
+}
+
+.hero-shot-container {
+	position:absolute;
+	top:0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-image: url('../images/hero-shot.png');
+	background-size:cover;
 }
 
 #hero-shot-bar-left {
 	color:white;
 	font-size: 3em;
 	position:absolute;
-	top:200px;
+	top:350px;
 	padding:10px 20px 10px 20px;
 	width:50%;
 	text-align:right;
@@ -95,7 +103,7 @@
 	color:white;
 	font-size: 3em;
 	position:absolute;
-	top:350px;
+	top:500px;
 	right:0px;
 	padding:10px 20px 10px 20px;
 	width:60%;
@@ -111,9 +119,10 @@
 
 #pinned-element1 {
 	margin: 0px;
-	width:90%;
-	margin: 0 auto;
-	padding:60px 0px 0px 0px;
+	width:auto;
+	min-height:100%;
+	position:relative;
+	background-image: url('../images/hands.jpg');
 }
 
 #pinned-element1 h2{
@@ -133,9 +142,9 @@
 	height:1000px; 
 	background-color:#f2f2f2;
 	margin-top:0px;
-	-moz-box-shadow:    0px -3px 15px 3px #8c8c8c;
+/*	-moz-box-shadow:    0px -3px 15px 3px #8c8c8c;
   	-webkit-box-shadow: 0px -3px 15px 3px #8c8c8c;
-  	box-shadow:         0px -3px 15px 3px #8c8c8c;
+  	box-shadow:         0px -3px 15px 3px #8c8c8c;*/
 }
 
 #pinned-element2 {
