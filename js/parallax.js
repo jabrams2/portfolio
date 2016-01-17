@@ -25,8 +25,7 @@ $(window).scroll(function(){
 
         // get all slides
         var slides = document.querySelectorAll("div.catch");
-
-
+        
         // create scene for every slide
         for (var i=0; i<slides.length; i++) {
             new ScrollMagic.Scene({
