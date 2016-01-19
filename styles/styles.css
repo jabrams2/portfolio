@@ -1,184 +1,84 @@
-#nav {
-	z-index: 21;
+
+body {
+	margin:0px;
+	padding:0px;
+}
+
+header {
+	height:80px;
+}
+
+h1 {
 	text-align: center;
-	position: fixed;
-	top:0px;
-	width:100%;
-	height:120px;
-    background-color: #ffffff;
-/*    -moz-box-shadow: 0px 0px 11.83px 1.17px rgba(0, 0, 0, 0.82);
-    -webkit-box-shadow: 0px 0px 11.83px 1.17px rgba(0, 0, 0, 0.82);
-    -o-box-shadow: 0px 0px 11.83px 1.17px rgba(0, 0, 0, 0.82);
-    box-shadow: 0px 0px 11.83px 1.17px rgba(0, 0, 0, 0.82);*/
-
+	font-family: 'Raleway', sans-serif;
+	font-weight:100;
+	letter-spacing:6px;
 }
 
-.nav-list-item {
-	list-style-type: none;
-	display: inline-block;
-	padding: 0px 50px 0px 20px;
-	line-height: 120px;
-}
-
-
-.work-with-me {
-	position: absolute;
-	right:40px;
-	top:40px;
-}
-
-.nav-list-item-link {
-	text-decoration: none;
-	color:#000000;
-	font-size: 1em;
-}
-
-
-/*
-.logo {
-	position:relative;
-	width:100%;
-}
-*/
-.nav-square {
-	background-image: url('../images/logo2.jpg');
-	background-size: cover;
-	z-index:5;
-	overflow: hidden;
-	position:absolute;
-	border:4px solid rgba(242, 242, 242, 1);
-	top:15px;
-	left:120px;
-/*	border-radius: 50%;
-*/	width: 200px;
-	height: 200px; 
-	background-color: #ffffff;
-	/* width and height can be anything, as long as they're equal */
-}
-
-.nav-square-container {
-	z-index:3;
-	position:absolute;
-	border:4px solid rgba(242, 242, 242, 1);
-	top:5px;
-	left:110px;
-/*	border-radius: 50%;
-*/	width: 220px;
-	height: 220px; 
-	background-color: none;
-	/* width and height can be anything, as long as they're equal */
-}
-
-#hero-shot{
-	position: relative;
-	height:100%;
-	background-color:#000000;
-	overflow: hidden;
-	margin-bottom:0px;
-
-}
-
-.hero-shot-container {
-	position:absolute;
-	top:0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	background-image: url('../images/hero-shot.png');
-	background-size:cover;
-}
-
-#hero-shot-bar-left {
-	color:white;
-	font-size: 3em;
-	position:absolute;
-	top:350px;
-	padding:10px 20px 10px 20px;
-	width:50%;
-	text-align:right;
-	background-color: rgba(0,0,0,.3);
-}
-
-#hero-shot-bar-right{
-	color:white;
-	font-size: 3em;
-	position:absolute;
-	top:500px;
-	right:0px;
-	padding:10px 20px 10px 20px;
-	width:60%;
-	text-align:left;
-	background-color: rgba(0,0,0,.3);
-}
-
-#pinned-trigger1{
-	background-color:#ffffff; 
-	height:50%;
-}
-
-
-#pinned-element1 {
-	margin: 0px;
-	width:auto;
-	min-height:100%;
-	position:relative;
-	background-image: url('../images/hands.jpg');
-	overflow:auto;
-}
-
-#pinned-element1 h2{
-	margin:0px;
-	padding:2% 0px 40px 0px;
-	font-weight: 300;
-}
-
-.pinned-trigger-1-element1-container {
-	width:40%; 
-	min-width: 300px;
-	margin:0 auto;
-	position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    width: 50%;
-    height: 70%;
-    margin: auto;
-	text-align:center;
-	border-radius: 5px 10px 5px 10px
-}
-
-.portfolio-websites{
-	border:1px solid black;
-}
-
-.portfolio-websites img {
-	vertical-align: middle;
-}
-
-#pinned-trigger2 {
-	height:1000px; 
-	background-color:#f2f2f2;
+#portfolio-container {
+	background-color: #f2f2f2;
 	margin-top:0px;
-/*	-moz-box-shadow:    0px -3px 15px 3px #8c8c8c;
-  	-webkit-box-shadow: 0px -3px 15px 3px #8c8c8c;
-  	box-shadow:         0px -3px 15px 3px #8c8c8c;*/
+	padding-top:30px;
+	overflow:auto;
+	height:100%;
 }
 
-#pinned-element2 {
-	margin: 0px;
-	width:90%;
-	margin: 0 auto;
-	padding:60px 0px 0px 0px;
-}
-
-#pinned-element2 h2 {
-	margin:0px;
-	padding:0px 0px 40px 0px;
-}
-
-/*.portfolio-image {
-	width:100%;
+.column {
 	height:auto;
-}*/
+	background-size:cover;
+	background-repeat: no-rpeat;
+	border:1px solid black;
+	overflow: auto;
+}
+
+.img {
+	vertical-align:middle;
+	-webkit-transition: all .3s ease-out;
+	-moz-transition: all .3s ease-out;
+	-ms-transition: all .3s ease-out;
+	-o-transition: all .3s ease-out;
+	transition: all .3s ease-out;
+
+}
+
+div.image {
+	z-index:1;
+	position: relative;
+	overflow: hidden;
+	display: inline-block;
+	margin-bottom: 40px;
+}
+
+span.title {
+	width: 100%;
+	position: absolute;
+	background: rgba(30,30,30,1);
+	text-align: left;
+	padding-left: 20px;
+	font-size: 14px;
+	color: white;
+	font-family: "Lucida Sans", "Trebuchet MS", Arial, sans-serif;
+	
+	-webkit-transition: all .3s ease-out;
+	-moz-transition: all .3s ease-out;
+	-ms-transition: all .3s ease-out;
+	-o-transition: all .3s ease-out;
+	transition: all .3s ease-out;
+	
+}
+
+/* SLIDE UP FULL */
+
+div.image.slideUpFull span { 
+	height: 141px;
+	bottom: -85px;
+}
+
+div.image.slideUpFull:hover img {
+	top: -150px;
+}
+
+div.image.slideUpFull:hover span {
+	bottom: 0px;
+}
 
