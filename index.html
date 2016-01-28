@@ -3,8 +3,8 @@
     <title>Portfolio | Jeremy Abrams</title>
     <head>
         <link rel="stylesheet" type="text/css" href="styles/normalize.css">
-        <link rel="stylesheet" type="text/css" href="styles/styles.css">
         <link rel="stylesheet" type="text/css" href="styles/layers.css">
+        <link rel="stylesheet" type="text/css" href="styles/styles.css">
         <link rel="stylesheet" type="text/css" href="styles/responsive.css">
         <link href='https://fonts.googleapis.com/css?family=Raleway:200,100' rel='stylesheet' type='text/css'>
 
@@ -13,14 +13,14 @@
         <meta name="description" content="A description will go here">
     </head>
     <body>
-        <header>
+        <header id="header">
              <h1>Jeremy Abrams</h1>
         </header>
         <section id="portfolio-container">
             <div class="row">
                 <div class="row-content buffer portfolio-container-graph">
                     <div class="column large-third medium-third small-half image slideUpFull">
-                        <img src="images/gittracker.png" alt="" class="img"/>
+                        <img src="images/gittracker.png" alt="" class="img" onclick="showProduct('gitTracker-overlay')" />
                     </div>
                     <div class="column large-third medium-third small-half small-last image slideUpFull">
                         <img src="images/autofx.png" alt="" class="img"/>
@@ -37,6 +37,44 @@
               <h2>About Me</h2>
               <p> asdfasdf asdf asdf asdf </p>
             </div>
+            <nav id="bottom-nav">
+              <a href="#" onclick="show('contact-overlay','modal')">Want to work with me?</a>
+            </nav>
         </section>
+
+        <!-- PRODUCT MODAL AND OVERLAY -->
+        <section id="gitTracker-overlay">
+        </section>
+
+
+        <!-- CONTACT FORM MODAL AND OVERLAY -->
+        <section id="contact-overlay" onclick="hide('contact-overlay','modal')">
+        </section>
+          <div id="modal">
+            <h2>I'd love to hear from you!</h2>
+            <form action="http://formspree.io/jeremy@whiteboxlabs.com"
+      method="POST" id="modal-form" class="plain">
+            <ul>
+              <li>
+                <label>Your name</label>
+                <input type="text" name="name" id="modal-form-input" class="plain">
+              </li>
+              <li>
+                <label>Your email</label>
+                <input type="email" name="_replyto" id="modal-form-input" class="plain">
+              </li>
+              <li>
+                <label>What are you looking for?</label>
+                <textarea></textarea>
+              </li>
+              <li id="modal-form-submit">
+                <div id="modal-form-submit-container">
+                  <input type="submit" value="Say Hi" id="modal-form-submit-container-button" class="plain">
+                </div>
+              </li>
+            </ul>
+            </form>
+          </div>
+        <script src="js/js.js"></script>
     </body>
 </html>
