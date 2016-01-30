@@ -3,6 +3,17 @@ body {
 	padding:0px;
 }
 
+a {
+	text-decoration: underline;
+	font-weight: bolder;
+	color:#000000;
+}
+
+a:hover {
+	text-decoration: underline;
+	color: #999999;
+}
+
 header {
 	height:120px;
 	position:relative;
@@ -155,12 +166,24 @@ figure:hover .img-overlay {
 	font-weight:300;
 }
 
+#overlay-container h3{
+	font-size:1.5em;
+	text-align: left;
+	margin-top:25px;
+}
 
 #overlay-container p {
 	text-align: justify;
 	font-weight: 200;
 }
 
+#overlay-container img {
+	margin-bottom:25px;
+}
+
+#overlay-container video {
+	margin-bottom:25px;
+}
 
 /* CONTACT FORM MODAL AND OVERLAY */
 
