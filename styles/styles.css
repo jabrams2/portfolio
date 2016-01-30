@@ -66,6 +66,13 @@ figure:hover .img-overlay {
   left: 0;
 }
 
+@media only handheld and (max-device-width : 600px) {
+	.img-overlay {
+		display: hidden;
+	}
+}
+
+
 #img-overlay-caption {
 	padding: 45% 0;
 	font-size:1.8em;
