@@ -19,41 +19,41 @@
         <section id="portfolio-container">
             <div class="row">
                 <div class="row-content buffer portfolio-container-graph">
-                    <figure class="column large-third medium-third small-half" id="img-container">
-                        <img src="images/gittracker.png" alt="" class="img" onclick="showProduct('gitTracker-overlay')" />
-                        <div class="img-overlay" id="gitO" onclick="showProduct('gitTracker-overlay')">
-                          <figcaption id="img-overlay-caption">
-                            GitTracker
-                          </figcaption>
-                        </div>
-                    </figure>
-                    <figure class="column large-third medium-third small-half small-last" id="img-container">
-                        <img src="images/autofx.png" alt="" class="img" onclick="showProduct('autofx-overlay')" onmouseover="showImgOverlay('autoO')" />
-                        <div class="img-overlay" id="autoO" onmouseout="hideImgOverlay('autoO')" onclick="showProduct('autofx-overlay')">
-                          <figcaption id="img-overlay-caption">
-                            AutoFX
-                          </figcaption>
-                        </div>
-                    </figure>
+                  <figure class="column large-third medium-third small-half" id="img-container">
+                      <img src="images/autofx.png" alt="" class="img" onclick="showProduct('autofx-overlay')" />
+                      <div class="img-overlay" id="autoO" onclick="showProduct('autofx-overlay')">
+                        <figcaption id="img-overlay-caption">
+                          AutoFX
+                        </figcaption>
+                      </div>
+                  </figure>
+                  <figure class="column large-third medium-third small-half small-last" id="img-container">
+                      <img src="images/uppd.png" alt="" class="img" onclick="showProduct('uppd-overlay')" />
+                      <div class="img-overlay" id="uppdO" onclick="showProduct('uppd-overlay')">
+                        <figcaption id="img-overlay-caption">
+                          Uppd
+                        </figcaption>
+                      </div>
+                  </figure>
                     <figure class="column large-third large-last medium-third medium-last small-half" id="img-container">
-                        <img src="images/uinightlife.png" alt="" class="img" onclick="showProduct('uinightlife-overlay')" onmouseover="showImgOverlay('uiO')" />
-                        <div class="img-overlay" id="uiO" onmouseout="hideImgOverlay('uiO')" onclick="showProduct('uinightlife-overlay')">
+                        <img src="images/uinightlife.png" alt="" class="img" onclick="showProduct('uinightlife-overlay')" />
+                        <div class="img-overlay" id="uiO" onclick="showProduct('uinightlife-overlay')">
                           <figcaption id="img-overlay-caption">
                             UINightlife
                           </figcaption>
                         </div>
                     </figure>
-                    <figure class="column large-third medium-third small-half small-last"  id="img-container">
-                        <img src="images/uppd.png" alt="" class="img" onclick="showProduct('uppd-overlay')" onmouseover="showImgOverlay('uppdO')"/>
-                        <div class="img-overlay" id="uppdO" onmouseout="hideImgOverlay('uppdO')" onclick="showProduct('uppd-overlay')">
-                          <figcaption id="img-overlay-caption">
-                            Uppd
-                          </figcaption>
-                        </div>
-                    </figure>
+                    <figure class="column large-third medium-third small-half small-last" id="img-container">
+                          <img src="images/gittracker.png" alt="" class="img" onclick="showProduct('gitTracker-overlay')" />
+                          <div class="img-overlay" id="gitO" onclick="showProduct('gitTracker-overlay')">
+                            <figcaption id="img-overlay-caption">
+                              GitTracker
+                            </figcaption>
+                          </div>
+                      </figure>
                     <figure class="column large-third medium-third small-half" id="img-container">
-                      <img src="images/ranGen.png" alt="" class="img" onclick="showProduct('ranGen-overlay')" onmouseover="showImgOverlay('ranO')"/>
-                      <div class="img-overlay" id="ranO" onmouseout="hideImgOverlay('ranO')" onclick="showProduct('ranGen-overlay')">
+                      <img src="images/ranGen.png" alt="" class="img" onclick="showProduct('ranGen-overlay')" />
+                      <div class="img-overlay" id="ranO" onclick="showProduct('ranGen-overlay')">
                         <figcaption id="img-overlay-caption">
                           RanGen
                         </figcaption>
@@ -61,13 +61,33 @@
                     </figure>
               </div>
             </div>
-            <div class="clear"></div>
+            <div class="clear bottom-margin"></div>
 
             <!-- ABOUT ME -->
-            <div class="portfolio-container-summary">
+            <!-- <div class="portfolio-container-summary">
               <h2>About Me</h2>
-              <p> asdfasdf asdf asdf asdf </p>
-            </div>
+              <p>
+                Hey there!
+              </p>
+              <p>
+                So a little about me:
+              </p>
+              <p>
+                Since high school, my passion has been technology and entrepreneurship.
+                I started my first company when I was fifteen: an e-publisher slightly ahead of its time.
+                After that, I built a music sharing platform for indie musicians. And after that,  a site
+                that notified college students about nearby bar specials.
+              </p>
+              <p>
+                I was always driven by the challenge. With each project, I bettered my skills, honed my knowledge, and improved myself.
+              </p>
+              </p>
+                In college, my studies were focused on mass-media, which built a foundational understanding of how the Internet can shape the world.
+                In law school, I saught to understand the tenants of small-business law and how it can be used to leverage a young entrepreneurs position.
+              </p>
+
+              </p>
+            </div> -->
             <nav id="bottom-nav">
               <a href="#" onclick="show('contact-overlay','modal')">Want to work with me?</a>
             </nav>
@@ -112,20 +132,49 @@
               <p>
                 Since the project is ongoing, the source code is confidential and the repo is private.</a>
               </p>
+              <p>
+                Below are mockups and a screencast of an early iteration of the website I offered. The client rejected this design in favor of an alternative, which I will post here when the site is live.
+              </p>
+              <h3>Early mockup of the landing page</h3>
+              <img src="images/autofx-mock.png" />
+              <h3>Early mockup of the Dealership section of the landing page</h3>
+              <img src="images/autofx-mock2.png" />
+              <h3>Test of early iteration's nav</h3>
+              <p>The scroll was still a little jumpy, but you can see that the bottom-nav fixes to the top of the view after you scroll past it</p>
+              <video width="100%" controls>
+                <source src="videos/autofxscreencast.mov">
+                Your browser does not support HTML5 video.
+              </video>
             </div>
           </section>
 
           <!--UINIGHTLIFE -->
           <section id="uinightlife-overlay" onclick="hideProduct('uinightlife-overlay')">
           <div>
-            <h2>AutoFX (in progress)</h2>
+            <h2>UINightlife.com (2010 - 2011)</h2>
             <p>
-              This is an ongoing project to renovate <a href="autofxusa.com">AutoFXUSA.com</a>
-              AutoFX is an automotive reconditioning solution company that is seeking to expand it's online presence.
+              UINightlife was a website I launched with
+              <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=2&cad=rja&uact=8&ved=0ahUKEwjz34r0t9LKAhVE-GMKHSQzCn4QFggiMAE&url=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fstevezazeski&usg=AFQjCNEguuHBIjz7gvkDIFQY8Z0OUd9ZDA&sig2=UJODlTBjHkJVMXaByJ0W-A">Steve Zazeski</a>
+              and <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&ved=0ahUKEwj1xPflt9LKAhUP2GMKHcmtBJkQFggdMAA&url=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fmichael-candido-9b7a5330&usg=AFQjCNEwyL1VLWNWCWaaqp6TFgmSPXbpPw&sig2=oXjg0jGjES9ry-DbjrK4NQ">Michael Candido</a>.
             </p>
             <p>
-              Since the project is ongoing, the source code is confidential and the repo is private.</a>
+              The purpose was to help students make the most informed decision when deciding on their weekend activities. Before UINightlife, you chose a bar at random, or based on general vibes. After UINightlife, students could check which bars had the best drinks and specials on any given night.
             </p>
+            <p>
+            We also setup a line-cam to show students which bars would be the busiest and which would be dead.
+            </p>
+            <p>
+              After being covered by the student newspaper and a local television station, traffic spiked and we leveraged it to gain partnerships with bars throughout campus. Our two closest partnerships were with Brothers Bar and Legends Bar and Grill.
+            <p>
+              <p> The site was shutdown after we graduated. Below, I have attached various screenshots of the website.
+            <h3>Screenshot of the live homepage</h3>
+            <img src="images/uinightlife-home.jpg" />
+            <h3>Screenshot of Firehaus' profile page</h3>
+            <img src="images/uinightlife-firehaus.jpg" />
+            <h3>Screenshot of the daily bar specials</h3>
+            <img src="images/uinightlife-specials.jpg" />
+            <h3>Screenshot of a profile page (stock photo, anyone?)</h3>
+            <img src="images/uinightlife-profile.jpg" />
           </div>
           </section>
 
@@ -149,20 +198,37 @@
               </video>
               <h3><a href="https://magazine.iit.edu/summer-2014/appetite-development">IIT Alumni Magazine, Summer 2014</a></h3>
               <img src="images/uppd-article.png" />
+              <h3>Early high fidelity mockups of the iPhone app</h3>
+              <img src="images/earlymockup.png" />
+              <h3>Screenshot of the live iPhone app</h3>
+              <img src="images/screenshot.png" />
+              <h3>Screenshot of Uppd's website</h3>
+              <img src="images/screenshot-of-website.png" />
+              <h3>Copy of a flyer for a sponsored challenge</h3>
+              <img src="images/swirlcup.jpg" />
             </div>
           </section>
 
           <!--RANGEN -->
         <section id="ranGen-overlay" onclick="hideProduct('ranGen-overlay')">
           <div>
-            <h2>AutoFX (in progress)</h2>
+            <h2>RanGen (2015)</h2>
             <p>
-              This is an ongoing project to renovate <a href="autofxusa.com">AutoFXUSA.com</a>
-              AutoFX is an automotive reconditioning solution company that is seeking to expand it's online presence.
+              While I was digging into Github's API for GitTracker, I decided to build a repo discover app.</p>
+            <p>
+              On load, the app would randomly selecta a Github user and four of their repositories. If you wanted to keep exploring, you could click a button to reload the repos.
             </p>
             <p>
-              Since the project is ongoing, the source code is confidential and the repo is private.</a>
+              Just like with GitTracker, my only purpose in building this app was to explore Javascript and Github's API. It was a fun project.
             </p>
+            <h3>Here's a screenshot of the page</h3>
+            <img src="images/rangen-full.png" />
+            <h3>Here's a screencast of the app</h3>
+            <video width="100%" controls>
+              <source src="videos/getuppd.mp4">
+              Your browser does not support HTML5 video.
+            </video>
+
           </div>
         </section>
       </section>
