@@ -20,8 +20,41 @@ h1 {
 	letter-spacing:6px;
 }
 
+#img-container {
+	position:relative;
+}
+
 .img {
 	display: block;
+	cursor: pointer;
+	cursor: hand;
+	z-index:0;
+}
+
+.img-overlay {
+	position:absolute;
+	z-index:1;
+	top:0;
+	left:0;
+ 	height:100%;
+ 	width:100%;
+ 	background-color:rgba(0,0,0,.8);
+	color:#ffffff;
+	text-align: center;
+	cursor: pointer;
+	cursor: hand;
+}
+
+#img-container div {
+	display: block;
+	transition: 1s;
+	left: -350px;
+}
+
+#img-overlay-caption {
+	padding: 45% 0;
+	font-size:1.8em;
+	font-weight: 200;
 }
 
 #portfolio-container {
@@ -32,12 +65,11 @@ h1 {
 	height:100%;
 }
 
-
 .portfolio-container-graph .column {
 	height:auto;
 	background-size:cover;
 	background-repeat: no-rpeat;
-	border:1px solid black;
+	border:1px solid #999999;
 	margin-bottom:40px;
 	overflow: auto;
 }
@@ -45,13 +77,12 @@ h1 {
 
 .portfolio-container-summary {
 	background-color: #ffffff;
-	border:1px solid black;
-
+	border:1px solid #999999;
 	width:50%;
 	max-height:100%;
 	overflow: auto;
 	margin:0 auto;
-	margin-bottom:50px;
+	margin-bottom:185px;
 	margin-top:50px;
 	padding:20px;
 }
@@ -93,8 +124,9 @@ h1 {
 }
 
 /* PRODUCT MODAL AND OVERLAY */
-#gitTracker-overlay {
-	height:100%;
+#overlay-container section {
+	height:auto;
+	min-height:1000px;
 	display: none;
 	background-color:#f2f2f2;
 	width:100%;
@@ -104,6 +136,24 @@ h1 {
 	left:0;
 }
 
+#overlay-container div {
+	margin:0 auto;
+	margin-top:150px;
+	width:50%;
+	max-width: 600px;
+	min-width:350px;
+}
+
+#overlay-container h2{
+	text-align: center;
+	font-weight:300;
+}
+
+
+#overlay-container p {
+	text-align: justify;
+	font-weight: 200;
+}
 
 
 /* CONTACT FORM MODAL AND OVERLAY */

@@ -19,20 +19,51 @@
         <section id="portfolio-container">
             <div class="row">
                 <div class="row-content buffer portfolio-container-graph">
-                    <div class="column large-third medium-third small-half image slideUpFull">
+                    <figure class="column large-third medium-third small-half" id="img-container">
                         <img src="images/gittracker.png" alt="" class="img" onclick="showProduct('gitTracker-overlay')" />
-                    </div>
-                    <div class="column large-third medium-third small-half small-last image slideUpFull">
-                        <img src="images/autofx.png" alt="" class="img"/>
-                    </div>
-                    <div class="column large-third large-last medium-third medium-last small-half image slideUpFull">
-                        <img src="images/lcohn.png" alt="" class="img"/>
-                    </div>
-                      <div class="column large-third medium-third small-half small-last image slideUpFull">
-                        <img src="images/uppd.png" alt="" class="img"/>
-                    </div>
-                </div>
+                        <div class="img-overlay" id="gitO" onclick="showProduct('gitTracker-overlay')">
+                          <figcaption id="img-overlay-caption">
+                            GitTracker
+                          </figcaption>
+                        </div>
+                    </figure>
+                    <figure class="column large-third medium-third small-half small-last" id="img-container">
+                        <img src="images/autofx.png" alt="" class="img" onclick="showProduct('autofx-overlay')" onmouseover="showImgOverlay('autoO')" />
+                        <div class="img-overlay" id="autoO" onmouseout="hideImgOverlay('autoO')" onclick="showProduct('autofx-overlay')">
+                          <figcaption id="img-overlay-caption">
+                            AutoFX
+                          </figcaption>
+                        </div>
+                    </figure>
+                    <figure class="column large-third large-last medium-third medium-last small-half" id="img-container">
+                        <img src="images/uinightlife.png" alt="" class="img" onclick="showProduct('uinightlife-overlay')" onmouseover="showImgOverlay('uiO')" />
+                        <div class="img-overlay" id="uiO" onmouseout="hideImgOverlay('uiO')" onclick="showProduct('uinightlife-overlay')">
+                          <figcaption id="img-overlay-caption">
+                            UINightlife
+                          </figcaption>
+                        </div>
+                    </figure>
+                    <figure class="column large-third medium-third small-half small-last"  id="img-container">
+                        <img src="images/uppd.png" alt="" class="img" onclick="showProduct('uppd-overlay')" onmouseover="showImgOverlay('uppdO')"/>
+                        <div class="img-overlay" id="uppdO" onmouseout="hideImgOverlay('uppdO')" onclick="showProduct('uppd-overlay')">
+                          <figcaption id="img-overlay-caption">
+                            Uppd
+                          </figcaption>
+                        </div>
+                    </figure>
+                    <figure class="column large-third medium-third small-half" id="img-container">
+                      <img src="images/ranGen.png" alt="" class="img" onclick="showProduct('ranGen-overlay')" onmouseover="showImgOverlay('ranO')"/>
+                      <div class="img-overlay" id="ranO" onmouseout="hideImgOverlay('ranO')" onclick="showProduct('ranGen-overlay')">
+                        <figcaption id="img-overlay-caption">
+                          RanGen
+                        </figcaption>
+                      </div>
+                    </figure>
+              </div>
             </div>
+            <div class="clear"></div>
+
+            <!-- ABOUT ME -->
             <div class="portfolio-container-summary">
               <h2>About Me</h2>
               <p> asdfasdf asdf asdf asdf </p>
@@ -42,10 +73,99 @@
             </nav>
         </section>
 
-        <!-- PRODUCT MODAL AND OVERLAY -->
-        <section id="gitTracker-overlay">
-        </section>
+        <!-- PRODUCT MODAL AND OVERLAYS -->
 
+        <section id="overlay-container">
+            <!--GITTRACKER -->
+          <section id="gitTracker-overlay" onclick="hideProduct('gitTracker-overlay')">
+            <div>
+              <h2>GitTracker (2015)</h2>
+              <p>
+                This is a tool I built as an experiment while learning javascript.
+                It tracks the dates on
+                which specified Github users created repositories.
+                When I originally built it, I intended to track the dates on
+                which users committed code to master. But this is where I ended up.
+                There's not really a purpose to it, other than teaching myself javascript.
+              </p>
+              <p>The Github users were chosen from this <a href="https://gist.github.com/paulmillr/2657075/">list</a>, which I
+                found by Googling "active github users." This is the
+                first thing that I've built with Javascript and I
+                just wanted to challenge myself in a fun way.
+                Don't look too much into it.
+              </p>
+              <video width="100%" controls>
+                <source src="videos/gittracker.mov">
+                Your browser does not support HTML5 video.
+              </video>
+            </div>
+          </section>
+
+            <!--AUTOFX -->
+          <section id="autofx-overlay" onclick="hideProduct('autofx-overlay')">
+            <div>
+              <h2>AutoFX (in progress)</h2>
+              <p>
+                This is an ongoing project to renovate <a href="autofxusa.com">AutoFXUSA.com</a>
+                AutoFX is an automotive reconditioning solution company that is seeking to expand it's online presence.
+              </p>
+              <p>
+                Since the project is ongoing, the source code is confidential and the repo is private.</a>
+              </p>
+            </div>
+          </section>
+
+          <!--UINIGHTLIFE -->
+          <section id="uinightlife-overlay" onclick="hideProduct('uinightlife-overlay')">
+          <div>
+            <h2>AutoFX (in progress)</h2>
+            <p>
+              This is an ongoing project to renovate <a href="autofxusa.com">AutoFXUSA.com</a>
+              AutoFX is an automotive reconditioning solution company that is seeking to expand it's online presence.
+            </p>
+            <p>
+              Since the project is ongoing, the source code is confidential and the repo is private.</a>
+            </p>
+          </div>
+          </section>
+
+          <!--UPPD -->
+          <section id="uppd-overlay" onclick="hideProduct('uppd-overlay')">
+            <div>
+              <h2>Uppd (2013 - 2014)</h2>
+              <p>
+                  Uppd was an interactive social game that allowed users to challenge friends to out-talent themselves and share their skills through social media. Users could win virtual medals or other tangible prizes.
+                  The app mimicked the high stakes of real-world competitions by giving users once chance to successfully record their challenge. Once they hit the "record" button, their submission would automatically upload to the app and enter into the challenge.
+              </p>
+              <p>
+                By combining the growing mobile trends of video, social media and gamification, Uppd offered a new avenue for self-expression and community.
+              </p>
+              <p>
+                Uppd also showed promise as a valuable advertising platform. By engaging users in brand-sponsored challenges, Uppd hoped to boost product-trials and thereby increase customer conversion rates.
+              </p>
+              <video width="100%" controls>
+                <source src="videos/getuppd.mp4">
+                Your browser does not support HTML5 video.
+              </video>
+              <h3><a href="https://magazine.iit.edu/summer-2014/appetite-development">IIT Alumni Magazine, Summer 2014</a></h3>
+              <img src="images/uppd-article.png" />
+            </div>
+          </section>
+
+          <!--RANGEN -->
+        <section id="ranGen-overlay" onclick="hideProduct('ranGen-overlay')">
+          <div>
+            <h2>AutoFX (in progress)</h2>
+            <p>
+              This is an ongoing project to renovate <a href="autofxusa.com">AutoFXUSA.com</a>
+              AutoFX is an automotive reconditioning solution company that is seeking to expand it's online presence.
+            </p>
+            <p>
+              Since the project is ongoing, the source code is confidential and the repo is private.</a>
+            </p>
+          </div>
+        </section>
+      </section>
 
         <!-- CONTACT FORM MODAL AND OVERLAY -->
         <section id="contact-overlay" onclick="hide('contact-overlay','modal')">
@@ -64,7 +184,7 @@
                 <input type="email" name="_replyto" id="modal-form-input" class="plain">
               </li>
               <li>
-                <label>What are you looking for?</label>
+                <label>Your message</label>
                 <textarea></textarea>
               </li>
               <li id="modal-form-submit">
@@ -75,6 +195,7 @@
             </ul>
             </form>
           </div>
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
         <script src="js/js.js"></script>
     </body>
 </html>
