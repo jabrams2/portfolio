@@ -1,16 +1,29 @@
 body {
 	margin:0px;
 	padding:0px;
+	min-height:100%;
 }
 
-header a {
+#header {
+	height:120px;
+	position:relative;
+	display: block;
+	background-color:#ffffff;
+
+}
+
+#header a {
 	text-decoration: none;
 	font-weight:100;
 	color:#000000;
 }
 
-header a:hover {
+#header a:hover {
 	color:#999999;
+}
+
+.shrink {
+	height:50px;
 }
 
 section a {
@@ -22,14 +35,6 @@ section a {
 section a:hover {
 	text-decoration: underline;
 	color: #999999;
-}
-
-header {
-	height:120px;
-	position:relative;
-	top:0;
-	background-color:#ffffff;
-	z-index:50;
 }
 
 h1 {
@@ -92,7 +97,8 @@ figure:hover .img-overlay {
 #portfolio-container {
 	background-color: #f2f2f2;
 	margin-top:0px;
-	padding-top:30px;
+	padding-top:0px;
+	padding-bottom:100px;
 	overflow:auto;
 	height:100%;
 	overflow-y:scroll;
@@ -136,7 +142,7 @@ figure:hover .img-overlay {
 	z-index: 10;
 	width:100%;
 	bottom:0;
-	background-color: #fff;
+	background-color: #ffffff;
 	color:white;
 	text-align: center;
 	height:100px;
@@ -176,8 +182,7 @@ figure:hover .img-overlay {
 	height:100%;
 	overflow:auto;
 	position:relative;
-	top:0;
-	left:0;
+	display: block;
 	padding-bottom:10%;
 }
 
