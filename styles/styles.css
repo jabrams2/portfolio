@@ -1,8 +1,6 @@
 body {
 	margin:0px;
 	padding:0px;
-	overflow-y:scroll;
-	-webkit-overflow-scrolling: touch;
 }
 
 a {
@@ -87,6 +85,9 @@ figure:hover .img-overlay {
 	padding-top:30px;
 	overflow:auto;
 	height:100%;
+	overflow-y:scroll;
+	-webkit-overflow-scrolling: touch;
+
 }
 
 .portfolio-container-graph .column {
