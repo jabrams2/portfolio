@@ -158,10 +158,16 @@ figure:hover .img-overlay {
 	border-radius: 10px;
 }
 
-#bottom-nav a:hover {
-	background-color: #f2f2f2;
-
+@media screen and (min-width : 415px){
+	#bottom-nav a:hover {
+		background-color: #f2f2f2;
+	}
 }
+
+#bottom-nav a:active {
+	background-color: #f2f2f2;
+}
+
 
 /* PRODUCT MODAL AND OVERLAY */
 #overlay-container {
