@@ -1,6 +1,8 @@
 body {
 	margin:0px;
 	padding:0px;
+	overflow-y:scroll;
+	-webkit-overflow-scrolling: touch;
 }
 
 a {
@@ -66,7 +68,7 @@ figure:hover .img-overlay {
   left: 0;
 }
 
-@media screen and (max-width : 600px) {
+@media screen and (max-width : 414px){
 	div.img-overlay {
 		display:none;
 	}
