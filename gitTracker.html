@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en-US" class="html">
+    <title>Portfolio | Jeremy Abrams</title>
+    <head>
+        <link rel="stylesheet" type="text/css" href="styles/normalize.css">
+        <link rel="stylesheet" type="text/css" href="styles/layers.css">
+        <link rel="stylesheet" type="text/css" href="styles/styles.css">
+        <link rel="stylesheet" type="text/css" href="styles/responsive.css">
+        <link href='https://fonts.googleapis.com/css?family=Raleway:200,100' rel='stylesheet' type='text/css'>
+
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta name="description" content="A description will go here">
+    </head>
+    <body>
+        <header id="header">
+          <h1><a href="index.html">Go Back</a></h1>
+        </header>
+        <section id="overlay-container">
+            <!--GITTRACKER -->
+            <div>
+              <h2>GitTracker (2015)</h2>
+              <p>
+                This is a tool I built as an experiment while learning javascript.
+                It tracks when a user commits code and then counts the number of commits per day.
+                There wasn't really a purpose to it, other than teaching myself javascript.
+              </p>
+              <p>The Github users were chosen from this <a href="https://gist.github.com/paulmillr/2657075/">list</a>, which I
+                found by Googling "active github users." This is the
+                first thing that I've built with Javascript and I
+                just wanted to challenge myself in a fun way.
+                Don't look too much into it.
+              </p>
+              <video width="100%" controls>
+                <source src="videos/gittracker.mp4">
+                Your browser does not support HTML5 video.
+              </video>
+            </div>
+      </section>
+
+      <nav id="bottom-nav">
+        <a href="#" onclick="show('contact-overlay','modal')">Want to work with me?</a>
+      </nav>
+
+        <!-- CONTACT FORM MODAL AND OVERLAY -->
+        <section id="contact-overlay" onclick="hide('contact-overlay','modal')">
+        </section>
+          <div id="modal">
+            <h2>I'd love to hear from you!</h2>
+            <form action="http://formspree.io/jeremy@whiteboxlabs.com"
+      method="POST" id="modal-form" class="plain">
+            <ul>
+              <li>
+                <label>Your name</label>
+                <input type="text" name="name" id="modal-form-input" class="plain">
+              </li>
+              <li>
+                <label>Your email</label>
+                <input type="email" name="_replyto" id="modal-form-input" class="plain">
+              </li>
+              <li>
+                <label>Your message</label>
+                <textarea></textarea>
+              </li>
+              <li id="modal-form-submit">
+                <div id="modal-form-submit-container">
+                  <input type="submit" value="Say Hi" id="modal-form-submit-container-button" class="plain">
+                </div>
+              </li>
+            </ul>
+            </form>
+          </div>
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+        <script src="js/js.js"></script>
+    </body>
+</html>

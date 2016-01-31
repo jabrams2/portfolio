@@ -14,28 +14,34 @@
     </head>
     <body>
         <header id="header">
-             <h1>Jeremy Abrams</h1>
+             <h1><a href="index.html">Jeremy Abrams</a></h1>
         </header>
         <section id="portfolio-container">
             <div class="row">
                 <div class="row-content buffer portfolio-container-graph">
-                  <figure class="column large-third medium-third small-half" id="img-container">
+                  <a href="autofx.html">
+                    <figure class="column large-third medium-third small-half" id="img-container">
                       <img src="images/autofx.png" alt="" class="img" onclick="showProduct('autofx-overlay')" />
                       <div class="img-overlay" id="autoO" onclick="showProduct('autofx-overlay')">
                         <figcaption id="img-overlay-caption">
                           AutoFX
                         </figcaption>
                       </div>
-                  </figure>
-                  <figure class="column large-third medium-third small-half small-last" id="img-container">
+                    </figure>
+                  </a>
+                  <a href="uppd.html">
+                    <figure class="column large-third medium-third small-half small-last" id="img-container">
                       <img src="images/uppd.png" alt="" class="img" onclick="showProduct('uppd-overlay')" />
                       <div class="img-overlay" id="uppdO" onclick="showProduct('uppd-overlay')">
                         <figcaption id="img-overlay-caption">
                           Uppd
                         </figcaption>
                       </div>
-                  </figure>
-                    <figure class="column large-third large-last medium-third medium-last small-half" id="img-container">
+                    </figure>
+                  </a>
+                  <a href="uinightlife.html">
+                    </figure>
+                      <figure class="column large-third large-last medium-third medium-last small-half" id="img-container">
                         <img src="images/uinightlife.png" alt="" class="img" onclick="showProduct('uinightlife-overlay')" />
                         <div class="img-overlay" id="uiO" onclick="showProduct('uinightlife-overlay')">
                           <figcaption id="img-overlay-caption">
@@ -43,197 +49,35 @@
                           </figcaption>
                         </div>
                     </figure>
+                  </a>
+                  <a href="gitTracker.html">
                     <figure class="column large-third medium-third small-half small-last" id="img-container">
-                          <img src="images/gittracker.png" alt="" class="img" onclick="showProduct('gitTracker-overlay')" />
-                          <div class="img-overlay" id="gitO" onclick="showProduct('gitTracker-overlay')">
-                            <figcaption id="img-overlay-caption">
-                              GitTracker
-                            </figcaption>
-                          </div>
-                      </figure>
+                        <img src="images/gittracker.png" alt="" class="img" />
+                        <div class="img-overlay" id="gitO">
+                          <figcaption id="img-overlay-caption">
+                            GitTracker
+                          </figcaption>
+                        </div>
+                    </figure>
+                  </a>
+                  <a href="ranGen.html">
                     <figure class="column large-third medium-third small-half" id="img-container">
-                      <img src="images/ranGen.png" alt="" class="img" onclick="showProduct('ranGen-overlay')" />
-                      <div class="img-overlay" id="ranO" onclick="showProduct('ranGen-overlay')">
+                      <img src="images/ranGen.png" alt="" class="img" />
+                      <div class="img-overlay" id="ranO">
                         <figcaption id="img-overlay-caption">
                           RanGen
                         </figcaption>
                       </div>
                     </figure>
+                  </a>
               </div>
             </div>
-            <div class="clear bottom-margin"></div>
-
-            <!-- ABOUT ME -->
-            <!-- <div class="portfolio-container-summary">
-              <h2>About Me</h2>
-              <p>
-                Hey there!
-              </p>
-              <p>
-                So a little about me:
-              </p>
-              <p>
-                Since high school, my passion has been technology and entrepreneurship.
-                I started my first company when I was fifteen: an e-publisher slightly ahead of its time.
-                After that, I built a music sharing platform for indie musicians. And after that,  a site
-                that notified college students about nearby bar specials.
-              </p>
-              <p>
-                I was always driven by the challenge. With each project, I bettered my skills, honed my knowledge, and improved myself.
-              </p>
-              </p>
-                In college, my studies were focused on mass-media, which built a foundational understanding of how the Internet can shape the world.
-                In law school, I saught to understand the tenants of small-business law and how it can be used to leverage a young entrepreneurs position.
-              </p>
-
-              </p>
-            </div> -->
+            <div class="clear"></div>
             <nav id="bottom-nav">
               <a href="#" onclick="show('contact-overlay','modal')">Want to work with me?</a>
             </nav>
         </section>
 
-        <!-- PRODUCT MODAL AND OVERLAYS -->
-
-        <section id="overlay-container">
-            <!--GITTRACKER -->
-          <section id="gitTracker-overlay" onclick="hideProduct('gitTracker-overlay')">
-            <div>
-              <h2>GitTracker (2015)</h2>
-              <p>
-                This is a tool I built as an experiment while learning javascript.
-                It tracks when a user commits code and then counts the number of commits per day.
-                There wasn't really a purpose to it, other than teaching myself javascript.
-              </p>
-              <p>The Github users were chosen from this <a href="https://gist.github.com/paulmillr/2657075/">list</a>, which I
-                found by Googling "active github users." This is the
-                first thing that I've built with Javascript and I
-                just wanted to challenge myself in a fun way.
-                Don't look too much into it.
-              </p>
-              <video width="100%" controls>
-                <source src="videos/gittracker.mp4">
-                Your browser does not support HTML5 video.
-              </video>
-            </div>
-          </section>
-
-            <!--AUTOFX -->
-          <section id="autofx-overlay" onclick="hideProduct('autofx-overlay')">
-            <div>
-              <h2>AutoFX (in progress)</h2>
-              <p>
-                This is an ongoing project to renovate <a href="autofxusa.com">AutoFXUSA.com</a>
-                AutoFX is an automotive reconditioning solution company that is seeking to expand its online presence.
-              </p>
-              <p>
-                Since the project is ongoing, the source code is confidential and the repo is private.</a>
-              </p>
-              <p>
-                Below is a screencast and sample screenshots from an early design that I offered. The client rejected this design in favor of an alternative, which I will post here when the site is live.
-              </p>
-              <h3>Early mockup of the landing page</h3>
-              <img src="images/autofx-mock.png" />
-              <h3>Early mockup of the Dealership section of the landing page</h3>
-              <img src="images/autofx-mock2.png" />
-              <h3>Test of early iteration's nav</h3>
-              <p>The scroll was still a little jumpy, but you can see that the bottom-nav fixes to the top of the view after you scroll past it</p>
-              <video width="100%" controls>
-                <source src="videos/autofxscreencast.mp4">
-                Your browser does not support HTML5 video.
-              </video>
-            </div>
-          </section>
-
-          <!--UINIGHTLIFE -->
-          <section id="uinightlife-overlay" onclick="hideProduct('uinightlife-overlay')">
-          <div>
-            <h2>UINightlife.com (2010 - 2011)</h2>
-            <p>
-              UINightlife was a website I launched with
-              <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=2&cad=rja&uact=8&ved=0ahUKEwjz34r0t9LKAhVE-GMKHSQzCn4QFggiMAE&url=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fstevezazeski&usg=AFQjCNEguuHBIjz7gvkDIFQY8Z0OUd9ZDA&sig2=UJODlTBjHkJVMXaByJ0W-A">Steve Zazeski</a>
-              and <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&ved=0ahUKEwj1xPflt9LKAhUP2GMKHcmtBJkQFggdMAA&url=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fmichael-candido-9b7a5330&usg=AFQjCNEwyL1VLWNWCWaaqp6TFgmSPXbpPw&sig2=oXjg0jGjES9ry-DbjrK4NQ">Michael Candido</a>.
-            </p>
-            <p>
-              The purpose was to help students make the most informed decision when deciding on their weekend activities. Before UINightlife, students chose a bar at random, or based on general vibes. After UINightlife, students could check which bars had the best drinks and specials on any given night.
-            </p>
-            <p>
-            We also setup a line-cam to show students which bars would be the busiest and which would be dead.
-            </p>
-            <p>
-              After being covered by the student newspaper and a local television station, traffic spiked and we leveraged it to gain partnerships with bars throughout campus. Our two closest partnerships were with Brothers Bar and Legends Bar and Grill.
-            </p>
-            <p>
-              We closed the site after graduating.
-            </p>
-            <p>
-              Below, I have attached various screenshots of the website.
-            </p>
-            <h3>Screenshot of the live homepage</h3>
-            <img src="images/uinightlife-home.jpg" />
-            <h3>Screenshot of Firehaus' profile page</h3>
-            <img src="images/uinightlife-firehaus.jpg" />
-            <h3>Screenshot of the daily bar specials</h3>
-            <img src="images/uinightlife-specials.jpg" />
-            <h3>Screenshot of a profile page (stock photo, anyone?)</h3>
-            <img src="images/uinightlife-profile.jpg" />
-          </div>
-          </section>
-
-          <!--UPPD -->
-          <section id="uppd-overlay" onclick="hideProduct('uppd-overlay')">
-            <div>
-              <h2>Uppd (2013 - 2014)</h2>
-              <p>
-                  Uppd was an interactive social game that allowed users to challenge friends to out-talent themselves and share their skills through social media. Users could win virtual medals or other tangible prizes.
-                  The app mimicked the high stakes of real-world competitions by giving users one chance to successfully record their challenge. Once they hit the "record" button, their submission would automatically upload to the app and enter into the challenge.
-              </p>
-              <p>
-                By combining the growing mobile trends of video, social media and gamification, Uppd offered a new avenue for self-expression and community.
-              </p>
-              <p>
-                Uppd also showed promise as a valuable advertising platform. By engaging users in brand-sponsored challenges, Uppd hoped to boost product-trials and thereby increase customer conversion rates.
-              </p>
-              <video width="100%" controls>
-                <source src="videos/getuppd.mp4">
-                Your browser does not support HTML5 video.
-              </video>
-              <h3><a href="https://magazine.iit.edu/summer-2014/appetite-development">IIT Alumni Magazine, Summer 2014</a></h3>
-              <img src="images/uppd-article.png" />
-              <h3>Early high fidelity mockups of the iPhone app</h3>
-              <img src="images/earlymockup.png" />
-              <h3>Screenshot of the live iPhone app</h3>
-              <img src="images/screenshot.png" />
-              <h3>Screenshot of Uppd's website</h3>
-              <img src="images/screenshot-of-website.png" />
-              <h3>Copy of a flyer for a sponsored challenge</h3>
-              <img src="images/swirlcup.jpg" />
-            </div>
-          </section>
-
-          <!--RANGEN -->
-        <section id="ranGen-overlay" onclick="hideProduct('ranGen-overlay')">
-          <div>
-            <h2>RanGen (2015)</h2>
-            <p>
-              While I was digging into Github's API for GitTracker, I decided to build a repo discovery app.</p>
-            <p>
-              On load, the app would randomly select a Github user and four of their repositories. If you wanted to keep exploring, you could click a button to reload the repos.
-            </p>
-            <p>
-              Just like with GitTracker, my only purpose in building this app was to explore Javascript and Github's API. It was a fun project.
-            </p>
-            <h3>Here's a screenshot of the page</h3>
-            <img src="images/rangen-full.png" />
-            <h3>Here's a screencast of the app</h3>
-            <video width="100%" controls>
-              <source src="videos/rangen.mp4">
-              Your browser does not support HTML5 video.
-            </video>
-
-          </div>
-        </section>
-      </section>
 
         <!-- CONTACT FORM MODAL AND OVERLAY -->
         <section id="contact-overlay" onclick="hide('contact-overlay','modal')">

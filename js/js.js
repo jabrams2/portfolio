@@ -9,12 +9,10 @@ function hide(target,target2) {
 }
 
 
-function showProduct(target,target2){
+function showProduct(target){
     document.getElementById(target).style.display = 'block';
-    document.getElementById(target2).style.display = 'block';
     }
 
-function hideProduct(target,target2) {
+function hideProduct(target) {
     document.getElementById(target).style.display = 'none';
-    document.getElementById(target2).style.display = 'none';
     }
