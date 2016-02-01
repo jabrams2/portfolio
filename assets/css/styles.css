@@ -238,7 +238,7 @@ figure:hover .img-overlay {
 }
 
 #modal {
-	height:500px;
+	max-height:400px;
 	z-index:95;
 	display: none;
 	background-color:white;
@@ -274,6 +274,7 @@ figure:hover .img-overlay {
 
 #modal-form-input {
 	border:1px solid #737373;
+	padding-left:4px;
 	height:2em;
 	width:100%;
 }

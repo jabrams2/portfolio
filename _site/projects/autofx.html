@@ -76,12 +76,14 @@
       </li>
       <li>
         <label>Your message</label>
-        <textarea></textarea>
+        <input type="text" name="message" id="modal-form-input" class="plain">
       </li>
       <li id="modal-form-submit">
         <div id="modal-form-submit-container">
           <input type="submit" value="Say Hi" id="modal-form-submit-container-button" class="plain">
+          <input type="hidden" name="_subject" value="New message from JeremyAbrams.com!" />
           <input type="text" name="_gotcha" style="display:none" />
+          <!-- <input type="hidden" name="_next" value="//site.io/thanks.html" /> -->
         </div>
       </li>
     </ul>
