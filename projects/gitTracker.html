@@ -3,9 +3,9 @@ layout: default
 ---
 
         <section id="overlay-container">
-          <header id="header">
-            <h1><a href="index.html">Go Back</a></h1>
-          </header>
+
+            {% include project-header.html %}
+
             <div>
               <h2>GitTracker (2015)</h2>
               <p>
@@ -20,7 +20,7 @@ layout: default
                 Don't look too much into it.
               </p>
               <video width="100%" controls>
-                <source src="videos/gittracker.mp4">
+                <source src="{{" /assets/videos/gittracker.mp4" | prepend: site.baseurl }}">
                 Your browser does not support HTML5 video.
               </video>
             </div>

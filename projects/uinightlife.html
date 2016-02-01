@@ -3,9 +3,9 @@ layout: default
 ---
 
       <section id="overlay-container">
-        <header id="header">
-          <h1><a href="index.html">Go Back</a></h1>
-        </header>
+
+        {% include project-header.html %}
+
         <div>
           <h2>UINightlife.com (2010 - 2011)</h2>
           <p>
@@ -29,12 +29,12 @@ layout: default
             Below, I have attached various screenshots of the website.
           </p>
           <h3>Screenshot of the live homepage</h3>
-          <img src="images/uinightlife-home.jpg" />
+          <img src="{{" /assets/images/uinightlife-home.jpg" | prepend: site.baseurl }}" />
           <h3>Screenshot of Firehaus' profile page</h3>
-          <img src="images/uinightlife-firehaus.jpg" />
+          <img src="{{" /assets/images/uinightlife-firehaus.jpg" | prepend: site.baseurl }}" />
           <h3>Screenshot of the daily bar specials</h3>
-          <img src="images/uinightlife-specials.jpg" />
+          <img src="{{" /assets/images/uinightlife-specials.jpg" | prepend: site.baseurl }}" />
           <h3>Screenshot of a profile page (stock photo, anyone?)</h3>
-          <img src="images/uinightlife-profile.jpg" />
+          <img src="{{" /assets/images/uinightlife-profile.jpg" | prepend: site.baseurl }}" />
         </div>
       </section>

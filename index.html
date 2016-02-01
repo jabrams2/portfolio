@@ -11,14 +11,14 @@ layout: default
       <!-- "BUFFER" CLASS ADDS SPACE BETWEEN COLUMNS - VIA LAYERS.CSS -->
         <div class="row-content buffer portfolio-container-graph">
           <!-- IMAGES LINK TO PROJECT PAGE -->
-          <a href="autofx.html">
+          <a href="{{ "/projects/autofx.html" | prepend: site.baseurl }}">
             <!-- COLUMNS ARE SPLIT INTO THIRDS - VIA LAYERS.CSS
                  THREE COLUMN BREAKPOINTS: SMALL, MEDIUM LARGE - VIA LAYERS.CSS
                  Images wrapped in <figure> element
 
                  COLUMN 1, ROW 1 -->
             <figure class="column large-third medium-third small-half" id="img-container">
-              <img src="images/autofx.png" alt="" class="img" />
+              <img src="{{" /assets/images/autofx.png" | prepend: site.baseurl }}" alt="" class="img" />
               <!-- IMAGE CAPTION WRAPPED IN CONTAINER THAT OVERLAYS
                    IMAGES ON HOVER -->
               <div class="img-overlay" id="autoO">
@@ -29,10 +29,10 @@ layout: default
               </div>
             </figure>
           </a>
-          <a href="uppd.html">
+          <a href="{{ "/projects/uppd.html" | prepend: site.baseurl }}">
             <!-- COLUMN 2, ROW 1 -->
             <figure class="column large-third medium-third small-half small-last" id="img-container">
-              <img src="images/uppd.png" alt="" class="img" />
+              <img src="{{" /assets/images/uppd.png" | prepend: site.baseurl }}" alt="" class="img" />
               <div class="img-overlay" id="uppdO">
                 <figcaption id="img-overlay-caption">
                   Uppd
@@ -40,11 +40,11 @@ layout: default
               </div>
             </figure>
           </a>
-          <a href="uinightlife.html">
+          <a href="{{ "/projects/uinightlife.html" | prepend: site.baseurl }}">
             <!-- COLUMN 3, ROW 1 -->
             </figure>
               <figure class="column large-third large-last medium-third medium-last small-half" id="img-container">
-                <img src="images/uinightlife.png" alt="" class="img" />
+                <img src="{{" /assets/images/uinightlife.png" | prepend: site.baseurl }}" alt="" class="img" />
                 <div class="img-overlay" id="uiO">
                   <figcaption id="img-overlay-caption">
                     UINightlife
@@ -52,10 +52,10 @@ layout: default
                 </div>
             </figure>
           </a>
-          <a href="gitTracker.html">
+          <a href="{{ "/projects/gittracker.html" | prepend: site.baseurl }}">
             <!-- COLUMN 1, ROW 2 -->
             <figure class="column large-third medium-third small-half small-last" id="img-container">
-                <img src="images/gittracker.png" alt="" class="img" />
+              <img src="{{" /assets/images/gittracker.png" | prepend: site.baseurl }}" alt="" class="img" />
                 <div class="img-overlay" id="gitO">
                   <figcaption id="img-overlay-caption">
                     GitTracker
@@ -63,10 +63,10 @@ layout: default
                 </div>
             </figure>
           </a>
-          <a href="ranGen.html">
+          <a href="{{ "/projects/rangen.html" | prepend: site.baseurl }}">
             <!-- COLUMN 1, ROW 2 -->
             <figure class="column large-third medium-third small-half" id="img-container">
-              <img src="images/ranGen.png" alt="" class="img" />
+              <img src="{{" /assets/images/ranGen.png" | prepend: site.baseurl }}" alt="" class="img" />
               <div class="img-overlay" id="ranO">
                 <figcaption id="img-overlay-caption">
                   RanGen

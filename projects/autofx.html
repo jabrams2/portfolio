@@ -3,9 +3,9 @@ layout: default
 ---
 
       <section id="overlay-container">
-        <header id="header">
-          <h1><a href="index.html">Go Back</a></h1>
-        </header>
+
+        {% include project-header.html %}
+        
         <div>
           <h2>AutoFX (in progress)</h2>
           <p>
@@ -19,15 +19,15 @@ layout: default
             Below is a screencast and sample screenshots from an early design that I offered. The client rejected this design in favor of an alternative, which I will post here when the site is live.
           </p>
           <h3>Early mockup of the landing page</h3>
-          <img src="images/autofx-mock.png" />
+          <img src="{{" /assets/images/autofx-mock.png" | prepend: site.baseurl }}" alt="" />
           <h3>Early mockup of the Dealership section of the landing page</h3>
-          <img src="images/autofx-mock2.png" />
+          <img src="{{" /assets/images/autofx-mock2.png" | prepend: site.baseurl }}" alt="" />
           <h3>Test of early iteration's nav</h3>
           <p>
             The scroll was still a little jumpy, but you can see that the bottom-nav fixes to the top of the view after you scroll past it
           </p>
           <video width="100%" controls>
-            <source src="videos/autofxscreencast.mp4">
+            <source src="{{" /assets/videos/autofxscreencast.mp4" | prepend: site.baseurl }}">
             Your browser does not support HTML5 video.
           </video>
         </div>

@@ -3,9 +3,9 @@ layout: default
 ---
 
       <section id="overlay-container">
-        <header id="header">
-          <h1><a href="index.html">Go Back</a></h1>
-        </header>
+
+        {% include project-header.html %}
+
         <div>
           <h2>RanGen (2015)</h2>
           <p>
@@ -17,10 +17,10 @@ layout: default
             Just like with GitTracker, my only purpose in building this app was to explore Javascript and Github's API. It was a fun project.
           </p>
           <h3>Here's a screenshot of the page</h3>
-          <img src="images/rangen-full.png" />
+          <img src="{{" /assets/images/rangen-full.png" | prepend: site.baseurl }}" />
           <h3>Here's a screencast of the app</h3>
           <video width="100%" controls>
-            <source src="videos/rangen.mp4">
+            <source src="{{" /assets/videos/rangen.mp4" | prepend: site.baseurl }}">
             Your browser does not support HTML5 video.
           </video>
         </div>

@@ -3,9 +3,9 @@ layout: default
 ---
 
       <section id="overlay-container">
-        <header id="header">
-          <h1><a href="index.html">Go Back</a></h1>
-        </header>
+
+        {% include project-header.html %}
+
         <div>
           <h2>Uppd (2013 - 2014)</h2>
           <p>
@@ -19,18 +19,18 @@ layout: default
             Uppd also showed promise as a valuable advertising platform. By engaging users in brand-sponsored challenges, Uppd hoped to boost product-trials and thereby increase customer conversion rates.
           </p>
           <video width="100%" controls>
-            <source src="videos/getuppd.mp4">
+            <source src="{{" /assets/videos/getuppd.mp4" | prepend: site.baseurl }}">
             Your browser does not support HTML5 video.
           </video>
           <h3><a href="https://magazine.iit.edu/summer-2014/appetite-development">IIT Alumni Magazine, Summer 2014</a></h3>
-          <img src="images/uppd-article.png" />
+          <img src="{{" /assets/images/uppd-article.png" | prepend: site.baseurl }}" />
           <h3>Early high fidelity mockups of the iPhone app</h3>
-          <img src="images/earlymockup.png" />
+          <img src="{{" /assets/images/earlymockup.png" | prepend: site.baseurl }}" />
           <h3>Screenshot of the live iPhone app</h3>
-          <img src="images/screenshot.png" />
+          <img src="{{" /assets/images/screenshot.png" | prepend: site.baseurl }}" />
           <h3>Screenshot of Uppd's website</h3>
-          <img src="images/screenshot-of-website.png" />
+          <img src="{{" /assets/images/screenshot-of-website.png" | prepend: site.baseurl }}" />
           <h3>Copy of a flyer for a sponsored challenge</h3>
-          <img src="images/swirlcup.jpg" />
+          <img src="{{" /assets/images/swirlcup.jpg" | prepend: site.baseurl }}" />
         </div>
       </section>
