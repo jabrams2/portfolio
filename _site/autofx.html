@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+  <!doctype html>
+<html lang="en-US" class="html">
+    <title>Jeremy Abrams | Portfolio</title>
+    <head>
+        <link rel="stylesheet" type="text/css" href="../css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="../css/layers.css">
+        <link rel="stylesheet" type="text/css" href="../css/styles.css">
+        <link rel="stylesheet" type="text/css" href="../css/responsive.css">
+        <link href='https://fonts.googleapis.com/css?family=Raleway:200,100' rel='stylesheet' type='text/css'>
+
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta name="description" content="Jeremy Abrams' portfolio site.">
+    </head>
+
+
+  <body>
+
+              <section id="overlay-container">
+        <header id="header">
+          <h1><a href="index.html">Go Back</a></h1>
+        </header>
+        <div>
+          <h2>AutoFX (in progress)</h2>
+          <p>
+            This is an ongoing project to renovate <a href="autofxusa.com">AutoFXUSA.com</a>
+            AutoFX is an automotive reconditioning solution company that is seeking to expand its online presence.
+          </p>
+          <p>
+            Since the project is ongoing, the source code is confidential and the repo is private.</a>
+          </p>
+          <p>
+            Below is a screencast and sample screenshots from an early design that I offered. The client rejected this design in favor of an alternative, which I will post here when the site is live.
+          </p>
+          <h3>Early mockup of the landing page</h3>
+          <img src="images/autofx-mock.png" />
+          <h3>Early mockup of the Dealership section of the landing page</h3>
+          <img src="images/autofx-mock2.png" />
+          <h3>Test of early iteration's nav</h3>
+          <p>
+            The scroll was still a little jumpy, but you can see that the bottom-nav fixes to the top of the view after you scroll past it
+          </p>
+          <video width="100%" controls>
+            <source src="videos/autofxscreencast.mp4">
+            Your browser does not support HTML5 video.
+          </video>
+        </div>
+      </section>
+
+
+    <footer class="site-footer">
+  <!-- STICKY BOTTOM NAV -->
+  <nav id="bottom-nav">
+    <a href="#" onclick="show('contact-overlay','modal')">Want to work with me?</a>
+  </nav>
+</footer>
+<!-- CONTACT FORM MODAL AND OVERLAY -->
+<section id="contact-overlay" onclick="hide('contact-overlay','modal')">
+</section>
+  <div id="modal">
+    <h2>I'd love to hear from you!</h2>
+    <form action="http://formspree.io/jbabrams2@gmail.com"
+method="POST" id="modal-form" class="plain">
+    <!-- INPUTS ORGANIZED AS UNORDERED LIST -->
+    <ul>
+      <li>
+        <label>Your name</label>
+        <input type="text" name="name" id="modal-form-input" class="plain">
+      </li>
+      <li>
+        <label>Your email</label>
+        <input type="email" name="_replyto" id="modal-form-input" class="plain">
+      </li>
+      <li>
+        <label>Your message</label>
+        <textarea></textarea>
+      </li>
+      <li id="modal-form-submit">
+        <div id="modal-form-submit-container">
+          <input type="submit" value="Say Hi" id="modal-form-submit-container-button" class="plain">
+        </div>
+      </li>
+    </ul>
+    </form>
+  </div>
+
+    <!-- GOOGLE API - JQUERY -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+
+<!-- PRIMARY JS FILE -->
+<script src="../js/js.js"></script>
+
+<!-- GOOGLE ANALYTICS -->
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-73144283-1', 'auto');
+ga('send', 'pageview');
+</script>
+
+
+  </body>
+
+</html>
