@@ -63,8 +63,7 @@
 </section>
   <div id="modal">
     <h2>I'd love to hear from you!</h2>
-    <form action="http://formspree.io/jbabrams2@gmail.com"
-method="POST" id="modal-form" class="plain">
+    <form method="POST" id="modal-form" class="plain">
     <!-- INPUTS ORGANIZED AS UNORDERED LIST -->
     <ul>
       <li>
@@ -82,11 +81,16 @@ method="POST" id="modal-form" class="plain">
       <li id="modal-form-submit">
         <div id="modal-form-submit-container">
           <input type="submit" value="Say Hi" id="modal-form-submit-container-button" class="plain">
+          <input type="text" name="_gotcha" style="display:none" />
         </div>
       </li>
     </ul>
     </form>
   </div>
+  <script>
+    var contactform = document.getElementById('modal-form');
+    contactform.setAttribute('action', '//formspree.io/' + 'jbabrams2' + '@' + 'gmail' + '.' + 'com');
+  </script>
 </footer>
 
     <!-- GOOGLE API - JQUERY -->
