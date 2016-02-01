@@ -317,3 +317,53 @@ figure:hover .img-overlay {
 #modal-form label {
 	font-weight: 100;
 }
+
+/* THANK YOU PAGE SELECTORS */
+
+#thankyou-container {
+	background-color: #ffffff;
+	border:1px solid #999999;
+	text-align: left;
+	width:50%;
+	min-width:320px;
+  max-width:800px;
+	max-height:100%;
+	overflow: auto;
+	margin:0 auto;
+	margin-bottom:100px;
+	margin-top:75px;
+	padding:20px 20px 20px 20px;
+}
+
+#thankyou-container h2 {
+	font-size: 3.5em;
+	text-align: center;
+	font-weight:100;
+	margin: 0px 0px 2.5px 0px;
+}
+
+#thankyou-container h3 {
+	font-size: 1.5em;
+	text-align: center;
+	font-weight:100;
+	margin-top:2.5px;
+
+}
+
+#thankyou-container-button {
+	text-align: center;
+	margin-top:25px;
+}
+
+#thankyou-container-button a {
+	text-decoration: none;
+	font-weight: 400;
+	text-transform: uppercase;
+	padding:5px 10px 5px 10px;
+	border:1px solid #999;
+}
+
+#thankyou-container-button a:hover {
+	background-color: #c6c6c6;
+	color:#fff
+}
