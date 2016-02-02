@@ -9,6 +9,9 @@
     <link rel="stylesheet" type="text/css" href="/assets/css/responsive.css">
     <link href='https://fonts.googleapis.com/css?family=Raleway:200,100' rel='stylesheet' type='text/css'>
 
+    <!-- highlight.js styles, used to insert code snipeets -->
+    <link rel="stylesheet" href="/path/to/styles/default.css">
+
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta name="description" content="Jeremy Abrams' portfolio site.">
@@ -37,6 +40,52 @@
                 just wanted to challenge myself in a fun way.
                 Don't look too much into it.
               </p>
+              <h3>So how'd I do it?</h3>
+              <p>(tl&#59;dr view the <a href="https://github.com/jbabrams2/gitTracker">Github repo here</a>)</p>
+                <ol>
+                  <li>I created an ajax call to the Github API, selecting a specific user's data.</li>
+                  <li>If I successfully connected, I created a function that stored the returned data.</li>
+                  <li>I used a for() loop that would loop through every result</li>
+                  <li>I assigned the API value: "pushed_at" to a "pushed_at" variable</li>
+                  <li>
+                    I eliminated any text in the string that came after the date and assigned it to variable &quot;datePushed&quot;.
+                    &quot;pushed_at&quot; was updated any time a commit was pushed to any of the repository's branches.
+                  </li>
+                  <li>I created a variable named "count", to store the number of times the user pushes code on a each date.</li>
+                  <li>I nested another for() loop that would run through the length of the current data stored in the &quot;result&quot; paremeter.</li>
+                  <li>I assigned the API value &quot;pushed_at&quot; to &quot;Match_pushed_at&quot; variable.</li>
+                  <li>I again eliminated any text in the string that came after the date and assigned the result to the variable &quot;datePushed&quote;</li>
+                  <li>I used an if() statement to determine whether the value of loop 1 was equal to the value of loop 2.
+                    If the value was equal, it meant the user pushed code on that date more than once. I would then increment the &quot;count&quot; variable.</li>
+                  <li>After running through every piece of data stored in the &quot;result&quot; parameter, an if() statement would run inside the first loop.</li>
+                  <li> This statement checked if the &quot;datePushed&quot; had already been stored in the array named &quot;arr1&quot; (more on that later).
+                    If so, it was a duplicate. I needed to count duplicates to sum the number of pushes on the given date, but I didn't want each date to
+                    display to the user.
+                  </li>
+                  <li>Therefore, duplicates were not added to the array named &quot;match&quot;. Later in the script, I append text to the #pushList element ID based on
+                    the values stored in &quot;match&quot;.
+                  <li>
+                    Further, if the value in &quot;datePushed&quot; was not a duplicate, I would store the &quot;count&quot; value in another array named, &quot;arr2&quot;.
+                  </li>
+                  <li>
+                    Next, every single &quot;datePushed&quot; value in the loop was added to the &quot;arr1&quot; array so that the above if() statement could properly
+                    cross-check whether any future &quot;datePushed&quot; values were duplicates.
+                  </li>
+                  <li>
+                    I then created yet another for() loop which looped through the &quot;match&quot; array and appended the relevant HTML
+                    to the HTML element with the &quot;pushList1&quot; ID.
+                  </li>
+                  <li>Finally, I used an if() statement to use plural language if the user pushed code more than once on a given date.</li>
+                  <li>I repeated this process for a total of three different Github users, generating the results of each user in their own column.</li>
+                  <li>That's it!</li>
+                </ol>
+                <p>I'm certain there is a more efficient way for me to structure this script, but I wrote this after just starting to learn Javascript.
+                  In fact, if you look carefully, you'll see that each user usually pushed code only once per date (though they occassionally pushed more often).
+                  This has led me to speculate that there's an error in my code somewhere.
+                 I may go back one day to find the bug (if there is one) and optimize the script. For now though, that's it!</p>
+                <p>
+                  If you're interested, feel free to view the sourcecode in the <a href="https://github.com/jbabrams2/gitTracker">GitTracker repo.</a>
+                </p>
               <video width="100%" controls>
                 <source src=" /assets/videos/gittracker.mp4">
                 Your browser does not support HTML5 video.
@@ -103,6 +152,10 @@ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 ga('create', 'UA-73144283-1', 'auto');
 ga('send', 'pageview');
 </script>
+
+<!-- highlight.js, used to insert code snippets -->
+<script src="/path/to/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
 
 
   </body>
