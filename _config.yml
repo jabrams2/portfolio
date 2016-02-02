@@ -11,7 +11,6 @@ email: jbabrams2@gmail.com
 description: Past projects and other cool things I've worked on. Constantly evolving, always in progress.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://jeremyabrams.com" # the base hostname & protocol for your site
-twitter_username: jekyllrb
 github_username:  jbabrams2
 
 # Build settings
