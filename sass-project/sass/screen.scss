@@ -1,0 +1,295 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+
+$section-name-color: #000000;
+
+$charcoal: #1a1a1a;
+$off-white: #f2f2f2;
+$light-gray: #e6e6e6;
+$dark-gray: #cccccc;
+$border-radius: 4px;
+
+$small-font: 16px;
+$medium-font:1.5rem;
+$large-font:2rem;
+
+$bold-font: 600;
+$light-font: 300;
+$thin-font: 100;
+
+
+/*UTILITIES */
+
+.bold {
+  font-weight: 600;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.medium-font {
+  font-size:1.5rem;
+}
+
+.small-font {
+  font-size: 16px;
+}
+
+body {
+  font-family: "proxima-nova", sans-serif;
+  font-weight:$light-font;
+}
+
+@mixin full-width-container($height) {
+  width:100%;
+  height:$height;
+}
+
+@mixin section-gradient($first-color, $second-color) {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#cccccc+0,cccccc+100&1+0,0+100 */
+  background: -moz-linear-gradient(left, $first-color 0%, $second-color 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, $first-color 0%,$second-color 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, $first-color 0%,$second-color 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+@mixin topic-section {
+  background-color:$charcoal;
+  position:relative;
+  .section-name {
+    @include full-width-container(auto);
+    background-color: $section-name-color;
+    h2 {
+      font-size:$large-font;
+      color:$off-white;
+      font-weight:$thin-font;
+      margin-left:50px;
+      padding:15px;
+    }
+  }
+  .slider {
+    div {
+      padding:20px;
+    }
+  }
+}
+
+.header-top {
+  @include full-width-container(51px);
+}
+
+.header-bottom {
+  @include full-width-container(40px);
+}
+
+.header-top {
+  background-color: $charcoal;
+  text-align: right;
+  #about-me{
+    display:none;
+    line-height: 50px;
+    padding-right:30px;
+    text-decoration: none;
+    color:#B0E2FF;
+  }
+  @media screen and (min-width:550px) {
+    #about-me {
+      display:inline;
+    }
+  }
+}
+
+#logo {
+  position: absolute;
+  height:81px;
+  width:auto;
+  top:12px;
+  left:12px;
+}
+
+@media screen and (min-width:550px) {
+  #logo {
+    left:80px;
+  }
+}
+
+#quote {
+  @include full-width-container(auto);
+  background-color:$charcoal;
+  // box-shadow: 0px 4px 7px #525252;
+  color:#fff;
+  position:relative;
+  text-align: center;
+  padding:20px 5px 20px 5px;
+  width:100%;
+  p {
+    font-size:$small-font;
+    font-weight:$thin-font;
+  }
+  .signature {
+    font-size:$small-font;
+  }
+  @media screen and (min-width: 600px) {
+    p {
+      font-size:$large-font;
+      margin:20px 20px 20px 20px;
+    }
+    .signature {
+      font-size:$medium-font;
+    }
+  }
+}
+
+#header-image {
+  @include full-width-container(auto);
+  vertical-align: top;
+}
+
+#skills {
+  @include full-width-container(auto);
+  background-color:$charcoal;
+  // border-top:1px solid #696969;
+  color:$off-white;
+  text-transform: uppercase;
+  text-align: center;
+  padding:25px 10px;
+  .odd,.even {
+    div {
+      h2 {
+      border-radius:$border-radius;
+      padding:10px;
+      margin:10px;
+      display: inline-block;
+      font-size: $medium-font;
+      letter-spacing:2px;
+      }
+      @media screen and (min-width:550px) and (max-width:850px) {
+        h2 {
+          font-size: $small-font;
+        }
+      }
+    }
+  }
+  .odd {
+    div:nth-child(odd) {
+      h2{
+      background-color:$off-white;
+      color:$charcoal;
+      }
+    }
+  }
+  .even {
+    div:nth-child(even) {
+      h2 {
+      background-color:$off-white;
+      color:$charcoal;
+      }
+    }
+  }
+}
+
+#endorsements {
+  @include full-width-container(auto);
+  position: relative;
+  overflow:auto;
+  .one-endorsement {
+    width:95%;
+    padding:20px 40px;
+    text-align: center;
+  }
+  .one-endorsement:nth-child(odd) {
+    float:right;
+    @include section-gradient(rgba(230,230,230,0),rgba(230,230,230,1));
+    .endorsement-text {
+      text-align: right;
+    }
+    .endorsement-img {
+      margin-left:20px;
+    }
+
+  }
+  .one-endorsement:nth-child(even) {
+    float:left;
+    @include section-gradient(rgba(204,204,204,1),rgba(204,204,204,0));
+    .endorsement-text {
+      text-align: left;
+    }
+    .endorsement-img {
+      margin-right:20px;
+    }
+  }
+  .endorsement-text {
+    display:inline-block;
+    width:70%;
+    font-size:$medium-font;
+    vertical-align: middle;
+    margin: 20px 0;
+  }
+  .endorsement-img {
+    width:100px;
+    height:100px;
+    vertical-align: middle;
+  }
+  .big-img {
+    display:none;
+  }
+  .small-img {
+    display:inline-block;
+  }
+  @media screen and (min-width:550px) {
+    .big-img {
+      display:inline-block;
+    }
+    .small-img {
+      display:none;
+    }
+  }
+}
+
+#design, #photography {
+  @include topic-section;
+}
+
+.image-container {
+  width:auto;
+  height:auto;
+  overflow:hidden;
+  .design-image {
+    width:auto;
+    height:300px;
+    box-shadow: 5px 5px 4px #000000;
+  }
+  .design-image:hover {
+    filter: grayscale(100%); /* Standard CSS */
+    -webkit-filter: grayscale(100%); /* CSS for Webkit Browsers */
+    filter: gray;  /* Internet Explorer IE6-9 */
+    -webkit-filter: grayscale(1); /* Old WebKit Browsers */
+  }
+
+}
+
+.parallax-window {
+  min-height:450px;
+  background: transparent;
+}
+
+#social-media {
+  position:absolute;
+  right:0;
+  top:165px;
+  background-color:#b3b3b3;
+  opacity:.9;
+  li {
+    font-size:$medium-font;
+    padding: 10px 20px;
+    .icon {
+      width:auto;
+      height:30px;
+      margin-right:20px;
+    }
+  }
+}

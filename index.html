@@ -1,102 +1,233 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
 
-<section id="portfolio-container">
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Your page title here :)</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
 
-  {% include primary-header.html %}
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- "ROW" CONTAINER ENCAPSULATES ALL COLUMNS - CLASS IS FROM LAYERS.CSS -->
-    <div class="row">
-      <!-- "BUFFER" CLASS ADDS SPACE BETWEEN COLUMNS - VIA LAYERS.CSS -->
-        <div class="row-content buffer portfolio-container-graph">
-          <!-- IMAGES LINK TO PROJECT PAGE -->
-          <a href="{{ "/projects/autofx.html" | prepend: site.baseurl }}">
-            <!-- COLUMNS ARE SPLIT INTO THIRDS - VIA LAYERS.CSS
-                 THREE COLUMN BREAKPOINTS: SMALL, MEDIUM LARGE - VIA LAYERS.CSS
-                 Images wrapped in <figure> element
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
 
-                 COLUMN 1, ROW 1 -->
-            <figure class="column large-third medium-third small-half" id="img-container">
-              <img src="{{" /assets/images/autofx.png" | prepend: site.baseurl }}" alt="" class="img" />
-              <!-- IMAGE CAPTION WRAPPED IN CONTAINER THAT OVERLAYS
-                   IMAGES ON HOVER -->
-              <div class="img-overlay" id="autoO">
-                <!-- FIGCAPTION ELEMENT LINKS TITLE TO IMAGE - ACCESIBILITY FRIENDLY -->
-                <figcaption id="img-overlay-caption">
-                  AutoFX
-                </figcaption>
-              </div>
-            </figure>
-          </a>
-          <a href="{{ "/projects/uppd.html" | prepend: site.baseurl }}">
-            <!-- COLUMN 2, ROW 1 -->
-            <figure class="column large-third medium-third small-half small-last" id="img-container">
-              <img src="{{" /assets/images/uppd.png" | prepend: site.baseurl }}" alt="" class="img"/>
-              <div class="img-overlay" id="uppdO">
-                <figcaption id="img-overlay-caption">
-                  Uppd
-                </figcaption>
-              </div>
-            </figure>
-          </a>
-          <a href="{{ "/projects/uinightlife.html" | prepend: site.baseurl }}">
-            <!-- COLUMN 3, ROW 1 -->
-            </figure>
-              <figure class="column large-third large-last medium-third medium-last small-half" id="img-container">
-                <img src="{{" /assets/images/uinightlife.png" | prepend: site.baseurl }}" alt="" class="img" />
-                <div class="img-overlay" id="uiO">
-                  <figcaption id="img-overlay-caption">
-                    UINightlife
-                  </figcaption>
-                </div>
-            </figure>
-          </a>
-          <a href="{{ "/projects/fooda.html" | prepend: site.baseurl }}">
-            <!-- COLUMN 1, ROW 2 -->
-            <figure class="column large-third medium-third small-half small-last" id="img-container">
-              <img src="{{" /assets/images/fooda-home.png" | prepend: site.baseurl }}" alt="" class="img" />
-                <div class="img-overlay" id="gitO">
-                  <figcaption id="img-overlay-caption">
-                    Fooda
-                  </figcaption>
-                </div>
-            </figure>
-          </a>
-          <a href="{{ "/projects/ranGen.html" | prepend: site.baseurl }}">
-            <!-- COLUMN 1, ROW 2 -->
-            <figure class="column large-third medium-third small-half" id="img-container">
-              <img src="{{" /assets/images/ranGen.png" | prepend: site.baseurl }}" alt="" class="img" />
-              <div class="img-overlay" id="ranO">
-                <figcaption id="img-overlay-caption">
-                  RanGen
-                </figcaption>
-              </div>
-            </figure>
-          </a>
-          <a href="{{ "/projects/gitTracker.html" | prepend: site.baseurl }}">
-            <!-- COLUMN 1, ROW 2 -->
-            <figure class="column large-third large-last medium-third medium-last small-half small-last" id="img-container">
-              <img src="{{" /assets/images/gittracker.png" | prepend: site.baseurl }}" alt="" class="img" />
-                <div class="img-overlay" id="gitO">
-                  <figcaption id="img-overlay-caption">
-                    GitTracker
-                  </figcaption>
-                </div>
-            </figure>
-          </a>
-      </div>
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="sass-project/stylesheets/ie.css">
+  <link rel="stylesheet" href="sass-project/stylesheets/print.css">
+  <link rel="stylesheet" href="sass-project/stylesheets/screen.css">
+    <!-- SLICK CSS -->
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <!-- Magnific Popup core CSS file -->
+    <link rel="stylesheet" href="magnific-popup/magnific-popup.css">
+
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+  <!-- Typekit
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="https://use.typekit.net/wak0boy.js"></script>
+  <script>try{Typekit.load({ async: true });}catch(e){}</script>
+
+</head>
+<body>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<div class="header-top">
+  <a href="#" id="about-me">About me</a>
+</div>
+<div class="header-bottom">
+  &nbsp;
+</div>
+<img id="logo" src="images/logo.png" />
+<div class="parallax-window" data-parallax="scroll" data-image-src="images/header-image-2.jpg" />
+  <div id="quote">
+    <p>
+      &quot;<span class="bold">Logic</span> will get you from A to B. <span class="bold">Imagination</span> will take you <span class="bold italic">everywhere.</span>&quot;
+      <span class="italic signature">-Albert Einstein</span>
+    </p>
+  </div>
+</div>
+<!-- <div id="social-media">
+  <ul id="link-list">
+    <li>
+      <img class="icon" src="images/icons/linkedin.png" />
+      LinkedIn
+    </li>
+    <li>
+      <img class="icon" src="images/icons/facebook.png" />
+      Facebook
+    </li>
+    <li>
+      <img class="icon" src="images/icons/lawbulletin.png" />
+      Lawbulletin
+    </li>
+    <li>
+      <img class="icon" src="images/icons/medium.png" />
+      Medium
+    </li>
+    <li>
+      <img class="icon" src="images/icons/instagram.png" />
+      Photography
+    </li>
+</div> -->
+<section id="skills">
+  <div class="row odd">
+    <div class="four columns">
+      <h2>web designer</h2>
     </div>
-    <div class="clear"></div>
-
-    <!-- ABOUT THIS SITE -->
-    <div class="portfolio-container-summary">
-      <div>
-        <h2>About this Site</h2>
-        <p>
-        I built this site with HTML5, CSS3, and a touch of Javascript.
-        I also used the <a href="http://eiskis.net/layers/">Layers.css framework</a> and the <a href="https://jekyllrb.com/">Jekyll static site generator</a>. For form submissions, I added a <a href="http://formspree.io/">Formspree</a> JS snippet.
-      </p>
-      </div>
+    <div class="four columns">
+      <h2>Lawyer</h2>
     </div>
+    <div class="four columns">
+      <h2>writer</h2>
+    </div>
+  </div>
+  <div class="row even">
+    <div class="four columns">
+      <h2>Developer</h2>
+    </div>
+    <div class="four columns">
+      <h2>Entrepreneur</h2>
+    </div>
+    <div class="four columns">
+      <h2>self-learner</h2>
+    </div>
+  </div>
+  <div class="row odd">
+    <div class="four columns">
+      <h2>photographer</h2>
+    </div>
+    <div class="four columns">
+      <h2>innovator</h2>
+    </div>
+    <div class="four columns">
+      <h2>doodler</h2>
+    </div>
+  </div>
 </section>
+<section id="endorsements">
+  <div class="one-endorsement">
+    <img class="endorsement-img small-img" src="images/bobo.png" />
+    <p class="endorsement-text">
+      “As a Web Designer and Developer, [Jeremy] is not only <span class="bold">passionate</span> at what he does but also a <span class="bold">fantastic communicator</span>”
+      <span class="italic small-font">-Bobo Zhao, Art Director</span>
+    </p>
+    <img class="endorsement-img big-img" src="images/bobo.png" />
+  </div>
+  <div class="one-endorsement">
+    <img class="endorsement-img" src="images/andrea.png" />
+    <p class="endorsement-text">
+      “[Jeremy] <span class="bold">cared deeply about others</span> and always wanted to make sure that everyone’s needs were met across all departments”
+      <span class="italic small-font">-Andrea Pereira de Almeida, UX Designer</span>
+    </p>
+  </div>
+  <div class="one-endorsement">
+    <img class="endorsement-img small-img" src="images/vikas.png" />
+    <p class="endorsement-text">
+      “From UI/UX designs to getting his hands dirty with web development, <span class="bold">Jeremy pours his passion into everything he does”</span>
+      <span class="italic small-font">-Vikas Shah, Mobile Application Developer</span>
+    </p>
+    <img class="endorsement-img big-img" src="images/vikas.png" />
+  </div>
+</section>
+<section id="design">
+  <div class="section-name">
+    <h2>Design &amp; Development Samples</h2>
+  </div>
+  <div class="autoplay responsive slider">
+    <div class="image-container">
+      <img class="design-image" src="images/design/justaskjordon-square.png">
+    </div class="image-container">
+    <div class="image-container">
+      <img class="design-image" src="images/design/fooda-home-square.png">
+    </div class="image-container">
+    <div class="image-container">
+      <img class="design-image" src="images/design/ranGen-square.png">
+    </div>
+    <div class="image-container">
+      <img class="design-image" src="images/design/michael-thomas-square.png">
+    </div>
+    <div class="image-container">
+      <img class="design-image" src="images/design/uppd-square.png">
+    </div>
+
+  </div>
+</section>
+<section id="photography">
+  <div class="section-name">
+    <h2>Photography Samples</h2>
+  </div>
+  <div class="autoplay responsive slider">
+    <div class="image-container">
+      <a class="image-link" href="images/photography/flower.jpg">
+        <img class="design-image" src="images/photography/flower.jpg">
+      </a>
+    </div>
+    <div class="image-container">
+      <a class="image-link" href="images/photography/flower-2.jpg">
+        <img class="design-image" src="images/photography/flower-2.jpg">
+      </a>
+    </div>
+    <div class="image-container">
+      <a class="image-link" href="images/photography/miles.jpg">
+        <img class="design-image" src="images/photography/miles.jpg">
+      </a>
+    </div>
+    <div class="image-container">
+      <a class="image-link" href="images/photography/harper-1.jpg">
+        <img class="design-image" src="images/photography/harper-1.jpg">
+      </a>
+    </div>
+    <div class="image-container">
+      <a class="image-link" href="images/photography/eye-1.jpg">
+        <img class="design-image" src="images/photography/eye-1.jpg">
+      </a>
+    </div>
+    <div class="image-container">
+      <a class="image-link" href="images/photography/harper-2.jpg">
+        <img class="design-image" src="images/photography/harper-2.jpg">
+      </a>
+    </div>
+    <div class="image-container">
+      <a class="image-link" href="images/photography/court.jpg">
+        <img class="design-image" src="images/photography/court.jpg">
+      </a>
+    </div>
+    <div class="image-container">
+      <a class="image-link" href="images/photography/building-1.jpg">
+        <img class="design-image" src="images/photography/building-1.jpg">
+      </a>
+    </div>
+    <div class="image-container">
+      <a class="image-link" href="images/photography/spider-web.jpg">
+        <img class="design-image" src="images/photography/spider-web.jpg">
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <!-- Slick Slider -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script type="text/javascript" src="slick/slick.min.js"></script>
+  <!-- Magnific Popup core JS file -->
+  <script src="magnific-popup/jquery.magnific-popup.js"></script>
+  <script src="parallax/parallax.js"></script>
+  <script type="text/javascript" src="js/js.js"></script>
+
+
+</body>
+</html>
