@@ -33,12 +33,15 @@ $bold-font: 700;
 $light-font: 400;
 $thin-font: 300;
 
+$border:1px solid $dark-gray;
+
+
 /*MIXINS*/
 
-@mixin project-images {
-  width:70%;
+@mixin project-images($width, $min-width) {
+  width:$width;
   max-width: 900px;
-  min-width:350px;
+  min-width:$min-width;
   height:auto;
   position:relative;
   margin-bottom:1rem;
@@ -91,7 +94,7 @@ $thin-font: 300;
 }
 
 .border {
-  border:1px solid $dark-gray;
+  border:$border;
 }
 
 body {
@@ -373,11 +376,13 @@ body {
     div {
       text-align: center;
       .project-hero-shot {
-        @include project-images;
+        @include project-images(70%, 350px);
         border:1px solid $dark-gray;
       }
       .project-body-shot {
-        @include project-images;
+        @include project-images(100%,0);
+        border-radius:10px;
+        background-color: $off-white;
       }
       ol {
         @include article-body-font;
@@ -406,6 +411,25 @@ body {
         a {
           text-decoration: none;
           color:$light-charcoal;
+        }
+      }
+      figure {
+        background-color: $off-white;
+        width:70%;
+        margin:0 auto;
+        margin-top:3rem;
+        padding:2rem;
+        border:$border;
+        figcaption {
+          color:$light-charcoal;
+          font-size: $medium-font;
+          font-weight: 400;
+          margin-bottom:2rem;
+          text-align: left;
+          a {
+            text-decoration: none;
+            color:$light-charcoal;
+          }
         }
       }
       p {
