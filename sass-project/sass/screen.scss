@@ -5,8 +5,16 @@
 
 @import "compass/reset";
 
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+
 $section-name-color: #000000;
 
+$light-charcoal:#737373;
 $charcoal: #1a1a1a;
 $off-white: #f2f2f2;
 $light-gray: #e6e6e6;
@@ -17,15 +25,45 @@ $small-font: 16px;
 $medium-font:1.5rem;
 $large-font:2rem;
 
-$bold-font: 600;
-$light-font: 300;
-$thin-font: 100;
+$paragraph-font: 1.2rem;
+$title-font: 2.5rem;
 
+
+$bold-font: 700;
+$light-font: 400;
+$thin-font: 300;
+
+/*MIXINS*/
+
+@mixin project-images {
+  width:70%;
+  max-width: 900px;
+  min-width:350px;
+  height:auto;
+  position:relative;
+  margin-bottom:1rem;
+}
+
+@mixin article-body-font {
+  font-family: 'quicksand', sans-serif;
+  font-weight:$thin-font;
+  line-height:1.5rem;
+}
 
 /*UTILITIES */
 
+
 .bold {
-  font-weight: 600;
+  font-weight: $bold-font;
+}
+
+
+.light {
+  font-weight: $light-font;
+}
+
+.thin {
+  font-weight: $thin-font;
 }
 
 .italic {
@@ -40,9 +78,26 @@ $thin-font: 100;
   font-size: 16px;
 }
 
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.border {
+  border:1px solid $dark-gray;
+}
+
 body {
-  font-family: "proxima-nova", sans-serif;
+  font-family: 'Quicksand', sans-serif;
   font-weight:$light-font;
+  background-color:$light-gray;
 }
 
 @mixin full-width-container($height) {
@@ -94,7 +149,7 @@ body {
     line-height: 50px;
     padding-right:30px;
     text-decoration: none;
-    color:#B0E2FF;
+    color:$light-gray;
   }
   @media screen and (min-width:550px) {
     #about-me {
@@ -107,33 +162,33 @@ body {
   position: absolute;
   height:81px;
   width:auto;
-  top:12px;
+  top:0px;
   left:12px;
 }
 
 @media screen and (min-width:550px) {
   #logo {
-    left:80px;
+    left:50px;
   }
 }
 
 #quote {
-  @include full-width-container(auto);
+  // @include full-width-container(auto);
   background-color:$charcoal;
-  // box-shadow: 0px 4px 7px #525252;
+  box-shadow: 0px 2px 3px black;
   color:#fff;
   position:relative;
   text-align: center;
-  padding:20px 5px 20px 5px;
-  width:100%;
+  padding:15px 5px 15px 5px;
   p {
-    font-size:$small-font;
+    font-size:$medium-font;
     font-weight:$thin-font;
   }
   .signature {
     font-size:$small-font;
   }
   @media screen and (min-width: 600px) {
+      padding:2px 5px 2px 5px;
     p {
       font-size:$large-font;
       margin:20px 20px 20px 20px;
@@ -150,9 +205,8 @@ body {
 }
 
 #skills {
-  @include full-width-container(auto);
   background-color:$charcoal;
-  // border-top:1px solid #696969;
+  box-shadow: 0px -2px 5px black;
   color:$off-white;
   text-transform: uppercase;
   text-align: center;
@@ -206,6 +260,7 @@ body {
     @include section-gradient(rgba(230,230,230,0),rgba(230,230,230,1));
     .endorsement-text {
       text-align: right;
+      font-weight: $thin-font;
     }
     .endorsement-img {
       margin-left:20px;
@@ -217,6 +272,8 @@ body {
     @include section-gradient(rgba(204,204,204,1),rgba(204,204,204,0));
     .endorsement-text {
       text-align: left;
+      font-weight: $thin-font;
+
     }
     .endorsement-img {
       margin-right:20px;
@@ -290,6 +347,74 @@ body {
       width:auto;
       height:30px;
       margin-right:20px;
+    }
+  }
+}
+
+#project-container {
+  position: relative;
+  #project-header {
+    background-color:$charcoal;
+    height:300px;
+    h2 {
+      color:$light-gray;
+      text-align: center;
+      font-size: $title-font;
+      padding-top:30px;
+    }
+  }
+  .project-article-container{
+    position:absolute;
+    top:6rem;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    div {
+      text-align: center;
+      .project-hero-shot {
+        @include project-images;
+        border:1px solid $dark-gray;
+      }
+      .project-body-shot {
+        @include project-images;
+      }
+      ol {
+        @include article-body-font;
+        list-style-type: square;
+        text-align: left;
+        position: relative;
+        width:70%;
+        margin:0 auto;
+        margin-bottom:2rem;
+      }
+  }
+    .project-article {
+      background-color:white;
+      border:1px solid $dark-gray;
+      width:70%;
+      max-width: 900px;
+      min-width:350px;
+      margin:0 auto;
+      h3 {
+        color:$light-charcoal;
+        font-size: $large-font;
+        font-weight: 400;
+        text-align: left;
+        padding-left:30px;
+        margin-top:2rem;
+        a {
+          text-decoration: none;
+          color:$light-charcoal;
+        }
+      }
+      p {
+        @include article-body-font;
+        padding:0 2rem 0 2rem;
+        margin:1.25rem 0 1.25rem 0;
+        text-align: left;
+        font-size: $paragraph-font;
+      }
     }
   }
 }

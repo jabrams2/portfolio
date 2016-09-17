@@ -67,130 +67,167 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/*MIXINS*/
 /*UTILITIES */
-/* line 27, ../sass/screen.scss */
+/* line 56, ../sass/screen.scss */
 .bold {
-  font-weight: 600;
+  font-weight: 700;
 }
 
-/* line 31, ../sass/screen.scss */
+/* line 61, ../sass/screen.scss */
+.light {
+  font-weight: 400;
+}
+
+/* line 65, ../sass/screen.scss */
+.thin {
+  font-weight: 300;
+}
+
+/* line 69, ../sass/screen.scss */
 .italic {
   font-style: italic;
 }
 
-/* line 35, ../sass/screen.scss */
+/* line 73, ../sass/screen.scss */
 .medium-font {
   font-size: 1.5rem;
 }
 
-/* line 39, ../sass/screen.scss */
+/* line 77, ../sass/screen.scss */
 .small-font {
   font-size: 16px;
 }
 
-/* line 43, ../sass/screen.scss */
-body {
-  font-family: "proxima-nova", sans-serif;
-  font-weight: 300;
+/* line 81, ../sass/screen.scss */
+.text-center {
+  text-align: center;
 }
 
-/* line 81, ../sass/screen.scss */
+/* line 85, ../sass/screen.scss */
+.text-left {
+  text-align: left;
+}
+
+/* line 89, ../sass/screen.scss */
+.text-right {
+  text-align: right;
+}
+
+/* line 93, ../sass/screen.scss */
+.border {
+  border: 1px solid #cccccc;
+}
+
+/* line 97, ../sass/screen.scss */
+body {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 400;
+  background-color: #e6e6e6;
+}
+
+/* line 136, ../sass/screen.scss */
 .header-top {
   width: 100%;
   height: 51px;
 }
 
-/* line 85, ../sass/screen.scss */
+/* line 140, ../sass/screen.scss */
 .header-bottom {
   width: 100%;
   height: 40px;
 }
 
-/* line 89, ../sass/screen.scss */
+/* line 144, ../sass/screen.scss */
 .header-top {
   background-color: #1a1a1a;
   text-align: right;
 }
-/* line 92, ../sass/screen.scss */
+/* line 147, ../sass/screen.scss */
 .header-top #about-me {
   display: none;
   line-height: 50px;
   padding-right: 30px;
   text-decoration: none;
-  color: #B0E2FF;
+  color: #e6e6e6;
 }
 @media screen and (min-width: 550px) {
-  /* line 100, ../sass/screen.scss */
+  /* line 155, ../sass/screen.scss */
   .header-top #about-me {
     display: inline;
   }
 }
 
-/* line 106, ../sass/screen.scss */
+/* line 161, ../sass/screen.scss */
 #logo {
   position: absolute;
   height: 81px;
   width: auto;
-  top: 12px;
+  top: 0px;
   left: 12px;
 }
 
 @media screen and (min-width: 550px) {
-  /* line 115, ../sass/screen.scss */
+  /* line 170, ../sass/screen.scss */
   #logo {
-    left: 80px;
+    left: 50px;
   }
 }
-/* line 120, ../sass/screen.scss */
+/* line 175, ../sass/screen.scss */
 #quote {
-  width: 100%;
-  height: auto;
   background-color: #1a1a1a;
+  box-shadow: 0px 2px 3px black;
   color: #fff;
   position: relative;
   text-align: center;
-  padding: 20px 5px 20px 5px;
-  width: 100%;
+  padding: 15px 5px 15px 5px;
 }
-/* line 129, ../sass/screen.scss */
+/* line 183, ../sass/screen.scss */
 #quote p {
-  font-size: 16px;
-  font-weight: 100;
+  font-size: 1.5rem;
+  font-weight: 300;
 }
-/* line 133, ../sass/screen.scss */
+/* line 187, ../sass/screen.scss */
 #quote .signature {
   font-size: 16px;
 }
 @media screen and (min-width: 600px) {
-  /* line 137, ../sass/screen.scss */
+  /* line 175, ../sass/screen.scss */
+  #quote {
+    padding: 2px 5px 2px 5px;
+  }
+  /* line 192, ../sass/screen.scss */
   #quote p {
     font-size: 2rem;
     margin: 20px 20px 20px 20px;
   }
-  /* line 141, ../sass/screen.scss */
+  /* line 196, ../sass/screen.scss */
   #quote .signature {
     font-size: 1.5rem;
   }
 }
 
-/* line 147, ../sass/screen.scss */
+/* line 202, ../sass/screen.scss */
 #header-image {
   width: 100%;
   height: auto;
   vertical-align: top;
 }
 
-/* line 152, ../sass/screen.scss */
+/* line 207, ../sass/screen.scss */
 #skills {
-  width: 100%;
-  height: auto;
   background-color: #1a1a1a;
+  box-shadow: 0px -2px 5px black;
   color: #f2f2f2;
   text-transform: uppercase;
   text-align: center;
   padding: 25px 10px;
 }
-/* line 162, ../sass/screen.scss */
+/* line 216, ../sass/screen.scss */
 #skills .odd div h2, #skills .even div h2 {
   border-radius: 4px;
   padding: 10px;
@@ -200,36 +237,36 @@ body {
   letter-spacing: 2px;
 }
 @media screen and (min-width: 550px) and (max-width: 850px) {
-  /* line 171, ../sass/screen.scss */
+  /* line 225, ../sass/screen.scss */
   #skills .odd div h2, #skills .even div h2 {
     font-size: 16px;
   }
 }
-/* line 179, ../sass/screen.scss */
+/* line 233, ../sass/screen.scss */
 #skills .odd div:nth-child(odd) h2 {
   background-color: #f2f2f2;
   color: #1a1a1a;
 }
-/* line 187, ../sass/screen.scss */
+/* line 241, ../sass/screen.scss */
 #skills .even div:nth-child(even) h2 {
   background-color: #f2f2f2;
   color: #1a1a1a;
 }
 
-/* line 195, ../sass/screen.scss */
+/* line 249, ../sass/screen.scss */
 #endorsements {
   width: 100%;
   height: auto;
   position: relative;
   overflow: auto;
 }
-/* line 199, ../sass/screen.scss */
+/* line 253, ../sass/screen.scss */
 #endorsements .one-endorsement {
   width: 95%;
   padding: 20px 40px;
   text-align: center;
 }
-/* line 204, ../sass/screen.scss */
+/* line 258, ../sass/screen.scss */
 #endorsements .one-endorsement:nth-child(odd) {
   float: right;
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#cccccc+0,cccccc+100&1+0,0+100 */
@@ -240,15 +277,16 @@ body {
   background: linear-gradient(to right, rgba(230, 230, 230, 0) 0%, #e6e6e6 100%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 }
-/* line 207, ../sass/screen.scss */
+/* line 261, ../sass/screen.scss */
 #endorsements .one-endorsement:nth-child(odd) .endorsement-text {
   text-align: right;
+  font-weight: 300;
 }
-/* line 210, ../sass/screen.scss */
+/* line 265, ../sass/screen.scss */
 #endorsements .one-endorsement:nth-child(odd) .endorsement-img {
   margin-left: 20px;
 }
-/* line 215, ../sass/screen.scss */
+/* line 270, ../sass/screen.scss */
 #endorsements .one-endorsement:nth-child(even) {
   float: left;
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#cccccc+0,cccccc+100&1+0,0+100 */
@@ -259,15 +297,16 @@ body {
   background: linear-gradient(to right, #cccccc 0%, rgba(204, 204, 204, 0) 100%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 }
-/* line 218, ../sass/screen.scss */
+/* line 273, ../sass/screen.scss */
 #endorsements .one-endorsement:nth-child(even) .endorsement-text {
   text-align: left;
+  font-weight: 300;
 }
-/* line 221, ../sass/screen.scss */
+/* line 278, ../sass/screen.scss */
 #endorsements .one-endorsement:nth-child(even) .endorsement-img {
   margin-right: 20px;
 }
-/* line 225, ../sass/screen.scss */
+/* line 282, ../sass/screen.scss */
 #endorsements .endorsement-text {
   display: inline-block;
   width: 70%;
@@ -275,68 +314,68 @@ body {
   vertical-align: middle;
   margin: 20px 0;
 }
-/* line 232, ../sass/screen.scss */
+/* line 289, ../sass/screen.scss */
 #endorsements .endorsement-img {
   width: 100px;
   height: 100px;
   vertical-align: middle;
 }
-/* line 237, ../sass/screen.scss */
+/* line 294, ../sass/screen.scss */
 #endorsements .big-img {
   display: none;
 }
-/* line 240, ../sass/screen.scss */
+/* line 297, ../sass/screen.scss */
 #endorsements .small-img {
   display: inline-block;
 }
 @media screen and (min-width: 550px) {
-  /* line 244, ../sass/screen.scss */
+  /* line 301, ../sass/screen.scss */
   #endorsements .big-img {
     display: inline-block;
   }
-  /* line 247, ../sass/screen.scss */
+  /* line 304, ../sass/screen.scss */
   #endorsements .small-img {
     display: none;
   }
 }
 
-/* line 253, ../sass/screen.scss */
+/* line 310, ../sass/screen.scss */
 #design, #photography {
   background-color: #1a1a1a;
   position: relative;
 }
-/* line 63, ../sass/screen.scss */
+/* line 118, ../sass/screen.scss */
 #design .section-name, #photography .section-name {
   width: 100%;
   height: auto;
   background-color: #000000;
 }
-/* line 66, ../sass/screen.scss */
+/* line 121, ../sass/screen.scss */
 #design .section-name h2, #photography .section-name h2 {
   font-size: 2rem;
   color: #f2f2f2;
-  font-weight: 100;
+  font-weight: 300;
   margin-left: 50px;
   padding: 15px;
 }
-/* line 75, ../sass/screen.scss */
+/* line 130, ../sass/screen.scss */
 #design .slider div, #photography .slider div {
   padding: 20px;
 }
 
-/* line 257, ../sass/screen.scss */
+/* line 314, ../sass/screen.scss */
 .image-container {
   width: auto;
   height: auto;
   overflow: hidden;
 }
-/* line 261, ../sass/screen.scss */
+/* line 318, ../sass/screen.scss */
 .image-container .design-image {
   width: auto;
   height: 300px;
   box-shadow: 5px 5px 4px #000000;
 }
-/* line 266, ../sass/screen.scss */
+/* line 323, ../sass/screen.scss */
 .image-container .design-image:hover {
   filter: grayscale(100%);
   /* Standard CSS */
@@ -348,13 +387,13 @@ body {
   /* Old WebKit Browsers */
 }
 
-/* line 275, ../sass/screen.scss */
+/* line 332, ../sass/screen.scss */
 .parallax-window {
   min-height: 450px;
   background: transparent;
 }
 
-/* line 280, ../sass/screen.scss */
+/* line 337, ../sass/screen.scss */
 #social-media {
   position: absolute;
   right: 0;
@@ -362,14 +401,108 @@ body {
   background-color: #b3b3b3;
   opacity: .9;
 }
-/* line 286, ../sass/screen.scss */
+/* line 343, ../sass/screen.scss */
 #social-media li {
   font-size: 1.5rem;
   padding: 10px 20px;
 }
-/* line 289, ../sass/screen.scss */
+/* line 346, ../sass/screen.scss */
 #social-media li .icon {
   width: auto;
   height: 30px;
   margin-right: 20px;
+}
+
+/* line 354, ../sass/screen.scss */
+#project-container {
+  position: relative;
+}
+/* line 356, ../sass/screen.scss */
+#project-container #project-header {
+  background-color: #1a1a1a;
+  height: 300px;
+}
+/* line 359, ../sass/screen.scss */
+#project-container #project-header h2 {
+  color: #e6e6e6;
+  text-align: center;
+  font-size: 2.5rem;
+  padding-top: 30px;
+}
+/* line 366, ../sass/screen.scss */
+#project-container .project-article-container {
+  position: absolute;
+  top: 6rem;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+}
+/* line 373, ../sass/screen.scss */
+#project-container .project-article-container div {
+  text-align: center;
+}
+/* line 375, ../sass/screen.scss */
+#project-container .project-article-container div .project-hero-shot {
+  width: 70%;
+  max-width: 900px;
+  min-width: 350px;
+  height: auto;
+  position: relative;
+  margin-bottom: 1rem;
+  border: 1px solid #cccccc;
+}
+/* line 379, ../sass/screen.scss */
+#project-container .project-article-container div .project-body-shot {
+  width: 70%;
+  max-width: 900px;
+  min-width: 350px;
+  height: auto;
+  position: relative;
+  margin-bottom: 1rem;
+}
+/* line 382, ../sass/screen.scss */
+#project-container .project-article-container div ol {
+  font-family: 'quicksand', sans-serif;
+  font-weight: 300;
+  line-height: 1.5rem;
+  list-style-type: square;
+  text-align: left;
+  position: relative;
+  width: 70%;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+}
+/* line 392, ../sass/screen.scss */
+#project-container .project-article-container .project-article {
+  background-color: white;
+  border: 1px solid #cccccc;
+  width: 70%;
+  max-width: 900px;
+  min-width: 350px;
+  margin: 0 auto;
+}
+/* line 399, ../sass/screen.scss */
+#project-container .project-article-container .project-article h3 {
+  color: #737373;
+  font-size: 2rem;
+  font-weight: 400;
+  text-align: left;
+  padding-left: 30px;
+  margin-top: 2rem;
+}
+/* line 406, ../sass/screen.scss */
+#project-container .project-article-container .project-article h3 a {
+  text-decoration: none;
+  color: #737373;
+}
+/* line 411, ../sass/screen.scss */
+#project-container .project-article-container .project-article p {
+  font-family: 'quicksand', sans-serif;
+  font-weight: 300;
+  line-height: 1.5rem;
+  padding: 0 2rem 0 2rem;
+  margin: 1.25rem 0 1.25rem 0;
+  text-align: left;
+  font-size: 1.2rem;
 }
