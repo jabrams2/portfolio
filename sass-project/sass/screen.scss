@@ -53,6 +53,13 @@ $border:1px solid $dark-gray;
   line-height:1.5rem;
 }
 
+@mixin grayscale {
+  filter: grayscale(100%); /* Standard CSS */
+  -webkit-filter: grayscale(100%); /* CSS for Webkit Browsers */
+  filter: gray;  /* Internet Explorer IE6-9 */
+  -webkit-filter: grayscale(1); /* Old WebKit Browsers */
+}
+
 /*UTILITIES */
 
 
@@ -314,6 +321,7 @@ body {
   @include topic-section;
 }
 
+
 .image-container {
   width:auto;
   height:auto;
@@ -324,10 +332,7 @@ body {
     box-shadow: 5px 5px 4px #000000;
   }
   .design-image:hover {
-    filter: grayscale(100%); /* Standard CSS */
-    -webkit-filter: grayscale(100%); /* CSS for Webkit Browsers */
-    filter: gray;  /* Internet Explorer IE6-9 */
-    -webkit-filter: grayscale(1); /* Old WebKit Browsers */
+    @include grayscale;
   }
 
 }
@@ -401,6 +406,7 @@ body {
       max-width: 900px;
       min-width:350px;
       margin:0 auto;
+      margin-bottom:3rem;
       h3 {
         color:$light-charcoal;
         font-size: $large-font;
@@ -418,6 +424,7 @@ body {
         width:70%;
         margin:0 auto;
         margin-top:3rem;
+        margin-bottom:3rem;
         padding:2rem;
         border:$border;
         figcaption {
@@ -438,6 +445,33 @@ body {
         margin:1.25rem 0 1.25rem 0;
         text-align: left;
         font-size: $paragraph-font;
+      }
+    }
+  }
+}
+
+footer {
+  .row {
+    color:$off-white;
+    padding:30px 20px 0px 20px;
+    height:200px;
+    background-color:$light-charcoal;
+    .columns {
+      h4 {
+        font-size:$paragraph-font;
+        font-weight:$light-font;
+        text-transform: uppercase;
+      }
+      ul {
+        margin-top:.3rem;
+        font-weight:$thin-font;
+        li {
+          line-height:1.5rem;
+          img.icons {
+            width:15px;
+            height:auto;
+          }
+        }
       }
     }
   }
