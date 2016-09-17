@@ -21,6 +21,7 @@ $light-gray: #e6e6e6;
 $dark-gray: #cccccc;
 $border-radius: 4px;
 
+$extra-small-font: .9rem;
 $small-font: 16px;
 $medium-font:1.5rem;
 $large-font:2rem;
@@ -58,6 +59,14 @@ $border:1px solid $dark-gray;
   -webkit-filter: grayscale(100%); /* CSS for Webkit Browsers */
   filter: gray;  /* Internet Explorer IE6-9 */
   -webkit-filter: grayscale(1); /* Old WebKit Browsers */
+}
+
+@mixin footer-column-font {
+  margin-top:.3rem;
+  font-weight:$thin-font;
+  line-height:1rem;
+  margin:1rem 0 1rem 0;
+  font-size:$extra-small-font;
 }
 
 /*UTILITIES */
@@ -453,9 +462,9 @@ body {
 footer {
   .row {
     color:$off-white;
-    padding:30px 20px 0px 20px;
-    height:200px;
-    background-color:$light-charcoal;
+    padding:30px 20px 30px 20px;
+    height:auto;
+    background-color:#595959;
     .columns {
       h4 {
         font-size:$paragraph-font;
@@ -463,15 +472,18 @@ footer {
         text-transform: uppercase;
       }
       ul {
-        margin-top:.3rem;
-        font-weight:$thin-font;
         li {
-          line-height:1.5rem;
+          @include footer-column-font;
           img.icons {
-            width:15px;
+            width:.9rem;
             height:auto;
+            vertical-align: middle;
+            margin-right:.25rem;
           }
         }
+      }
+      p {
+        @include footer-column-font;
       }
     }
   }
